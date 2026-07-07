@@ -1,5 +1,5 @@
 ---
-title: Welcome to shea-components
+title: Welcome to the Developer Hub
 hidden: false
 ---
 <Callout icon="📘" theme="info">
