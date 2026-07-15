@@ -8,6 +8,10 @@ metadata:
 <Tabs>
   <Tab title="Test">
     other content
+
+    <Accordion title="" icon="fa-info-circle">
+      lhgfahgf
+    </Accordion>
   </Tab>
 
   <Tab title="Rename">
@@ -39,7 +43,9 @@ metadata:
   </Tab>
 
   <Tab title="Tab 9">
+    <Accordion title="" icon="fa-info-circle">
 
+    </Accordion>
   </Tab>
 
   <Tab title="Tab 10">
@@ -53,21 +59,5 @@ metadata:
 
 ```text
 ```
-
-<Accordion title="" icon="fa-info-circle">
-  <Tabs>
-    <Tab title="Tab 1">
-
-    </Tab>
-
-    <Tab title="Tab 2">
-
-    </Tab>
-
-    <Tab title="Tab 3">
-
-    </Tab>
-  </Tabs>
-</Accordion>
 
 <br />
