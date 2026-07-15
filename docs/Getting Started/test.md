@@ -9,13 +9,15 @@ metadata:
   <Tab title="Test">
     other content
 
-    <Accordion title="" icon="fa-info-circle">
+    <Accordion title="test" icon="fa-info-circle">
 
     </Accordion>
   </Tab>
 </Tabs>
 
-<br />
+<Accordion title="test" icon="fa-info-circle">
+
+</Accordion>
 
 <Tabs>
   <Tab title="Test">
@@ -88,17 +90,19 @@ metadata:
   </Column>
 
   <Column>
-    2 sid
+    2 side
   </Column>
 </Columns>
 
 ![]()
 
 <Callout icon="📘" theme="info">
-  ###
+  ### test
 </Callout>
 
 <Recipe  />
+
+<Embed title="" typeOfEmbed="pdf" url="" />
 
 <br />
 
