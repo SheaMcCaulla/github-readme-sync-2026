@@ -10,7 +10,7 @@ metadata:
     other content
 
     <Accordion title="" icon="fa-info-circle">
-      lhgfahgf
+
     </Accordion>
   </Tab>
 
@@ -60,4 +60,28 @@ metadata:
 ```text
 ```
 
-<br />
+<Cards>
+  <Card title="Card One" icon="fa-rocket">
+
+  </Card>
+
+  <Card title="Card Two" icon="fa-code">
+
+  </Card>
+
+  <Card title="Card Three" icon="fa-comments">
+
+  </Card>
+</Cards>
+
+<Columns layout="fixed">
+  <Column>
+
+  </Column>
+
+  <Column>
+
+  </Column>
+</Columns>
+
+/comp
