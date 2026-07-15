@@ -21,6 +21,16 @@ metadata:
 
 <Tabs>
   <Tab title="Test">
+    <Recipe  />
+
+    <Embed title="" typeOfEmbed="youtube" url="" />
+
+    ![]()
+
+    <Embed title="" typeOfEmbed="github" url="" />
+
+    <Embed title="" typeOfEmbed="iframe" url="https://readme.com/pricing" />
+
 
   </Tab>
 
