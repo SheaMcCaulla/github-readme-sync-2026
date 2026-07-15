@@ -13,6 +13,14 @@ metadata:
 
     </Accordion>
   </Tab>
+</Tabs>
+
+<br />
+
+<Tabs>
+  <Tab title="Test">
+
+  </Tab>
 
   <Tab title="Rename">
     content
@@ -76,12 +84,22 @@ metadata:
 
 <Columns layout="fixed">
   <Column>
-
+    1 side
   </Column>
 
   <Column>
-
+    2 sid
   </Column>
 </Columns>
 
-/comp
+![]()
+
+<Callout icon="📘" theme="info">
+  ###
+</Callout>
+
+<br />
+
+<Embed title="" typeOfEmbed="youtube" url="" />
+
+<br />
