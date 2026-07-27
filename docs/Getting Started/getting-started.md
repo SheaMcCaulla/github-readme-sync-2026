@@ -1,48 +1,48 @@
 ---
-title: Welcome to the Developer Hub
+title: デベロッパーハブへようこそ
 hidden: false
 ---
 <Callout icon="📘" theme="info">
-  **Template:**  Delete this callout and edit this page with your content and links.
+  **テンプレート:** このコールアウトを削除し、コンテンツやリンクに合わせてこのページを編集してください。
 </Callout>
 
 <Cards>
-  {/* Edit the props below to customize these components */}
-  <Card title="Quick Start" href="#" icon="fa-duotone fa-rocket-launch">Learn how to get started with our product</Card>
+  {/* 以下のプロパティを編集して、これらのコンポーネントをカスタマイズします */}
+  <Card title="クイックスタート" href="#" icon="fa-duotone fa-rocket-launch">製品の利用を開始する方法を学びます</Card>
 
-  <Card title="API Reference" href="#" icon="fa-duotone fa-code-simple">Explore endpoints and build your integration</Card>
+  <Card title="APIリファレンス" href="#" icon="fa-duotone fa-code-simple">エンドポイントを探索し、インテグレーションを構築します</Card>
 
-  <Card title="Build with AI" href="#" icon="fa-duotone fa-sparkles">Use LLM features to automate your workflow</Card>
+  <Card title="AIを活用した構築" href="#" icon="fa-duotone fa-sparkles">LLM機能を使用してワークフローを自動化します</Card>
 </Cards>
 
 <br />
 
-## Recent Releases
+## 最近のリリース
 
 <Cards>
-  <Card isNew kind="tile" title="v2.0 Migration" href="#" icon="fa-duotone fa-magnifying-glass">Everything you need to upgrade</Card>
+  <Card isNew kind="tile" title="v2.0への移行" href="#" icon="fa-duotone fa-magnifying-glass">アップグレードに必要なすべての情報</Card>
 
-  <Card kind="tile" title="Webhooks" href="#" icon="fa-duotone fa-bullhorn">Real-time events are now available</Card>
+  <Card kind="tile" title="Webhook" href="#" icon="fa-duotone fa-bullhorn">リアルタイムイベントが利用可能になりました</Card>
 
-  <Card kind="tile" title="Android SDK" href="#" icon="fa-duotone fa-robot">Our native Android library is out of beta</Card>
+  <Card kind="tile" title="Android SDK" href="#" icon="fa-duotone fa-robot">ネイティブAndroidライブラリがベータ版から正式リリースされました</Card>
 </Cards>
 
 <br />
 
-## The Basics
+## 基本事項
 
 <Cards>
-  <Card kind="tile" title="Customize" href="#" icon="fa-duotone fa-brush">Style the widget to match your brand</Card>
+  <Card kind="tile" title="カスタマイズ" href="#" icon="fa-duotone fa-brush">ブランドに合わせてウィジェットのスタイルを設定します</Card>
 
-  <Card kind="tile" title="Integrations" href="#" icon="fa-duotone fa-arrow-down-left-and-arrow-up-right-to-center">Connect with third-party services</Card>
+  <Card kind="tile" title="インテグレーション" href="#" icon="fa-duotone fa-arrow-down-left-and-arrow-up-right-to-center">サードパーティ製サービスと接続します</Card>
 
-  <Card kind="tile" title="CLI" href="#" icon="fa-duotone fa-terminal">Manage resources from your terminal</Card>
+  <Card kind="tile" title="CLI" href="#" icon="fa-duotone fa-terminal">ターミナルからリソースを管理します</Card>
 
-  <Card kind="tile" title="Security" href="" icon="fa-duotone fa-shield-dog">Learn how we secure your data</Card>
+  <Card kind="tile" title="セキュリティ" href="" icon="fa-duotone fa-shield-dog">データのセキュリティ保護方法について説明します</Card>
 
-  <Card kind="tile" title="Common Issues" href="" icon="fa-duotone fa-file-circle-info">Troubleshoot common issues</Card>
+  <Card kind="tile" title="一般的な問題" href="" icon="fa-duotone fa-file-circle-info">一般的な問題のトラブルシューティングを行います</Card>
 
-  <Card kind="tile" title="Sync" href="#" icon="fa-duotone fa-code-compare">Connect to a storage provider</Card>
+  <Card kind="tile" title="同期" href="#" icon="fa-duotone fa-code-compare">ストレージプロバイダーに接続します</Card>
 </Cards>
 
 <br />
