@@ -3,7 +3,7 @@ title: Bienvenido al Centro de Desarrolladores
 hidden: false
 ---
 <Callout icon="📘" theme="info">
-  **Plantilla:** Elimina este aviso y edita esta página con tu contenido y enlaces.
+  **Plantilla:** Elimina esta llamada y edita esta página con tu contenido y enlaces.
 </Callout>
 
 <Cards>
