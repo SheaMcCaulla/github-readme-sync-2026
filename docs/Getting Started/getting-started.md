@@ -3,11 +3,11 @@ title: Benvenuto nel Developer Hub
 hidden: false
 ---
 <Callout icon="📘" theme="info">
-  **Template:** Elimina questo callout e modifica questa pagina con i tuoi contenuti e link.
+  **Modello:** Elimina questo avviso e modifica questa pagina con i tuoi contenuti e link.
 </Callout>
 
 <Cards>
-  {/* Modifica le proprietà seguenti per personalizzare questi componenti */}
+  {/* Modifica le prop seguenti per personalizzare questi componenti */}
   <Card title="Avvio rapido" href="#" icon="fa-duotone fa-rocket-launch">Scopri come iniziare a usare il nostro prodotto</Card>
 
   <Card title="Riferimento API" href="#" icon="fa-duotone fa-code-simple">Esplora gli endpoint e crea la tua integrazione</Card>
@@ -17,7 +17,7 @@ hidden: false
 
 <br />
 
-## Rilasci recenti
+## Ultime novità
 
 <Cards>
   <Card isNew kind="tile" title="Migrazione a v2.0" href="#" icon="fa-duotone fa-magnifying-glass">Tutto ciò di cui hai bisogno per eseguire l'aggiornamento</Card>
@@ -32,7 +32,7 @@ hidden: false
 ## Le basi
 
 <Cards>
-  <Card kind="tile" title="Personalizzazione" href="#" icon="fa-duotone fa-brush">Personalizza lo stile del widget in base al tuo brand</Card>
+  <Card kind="tile" title="Personalizza" href="#" icon="fa-duotone fa-brush">Personalizza lo stile del widget per adattarlo al tuo brand</Card>
 
   <Card kind="tile" title="Integrazioni" href="#" icon="fa-duotone fa-arrow-down-left-and-arrow-up-right-to-center">Connettiti con servizi di terze parti</Card>
 
