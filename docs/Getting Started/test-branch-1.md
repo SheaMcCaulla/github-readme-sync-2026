@@ -1,5 +1,5 @@
 ---
-title: Test Branch 1
+title: Test-Branch 1
 deprecated: false
 hidden: false
 metadata:
