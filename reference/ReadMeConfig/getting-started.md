@@ -1,6 +1,8 @@
 ---
-title: Getting Started
-excerpt: Set up the welcome page for your API to help users make their first call.
+title: Erste Schritte
+excerpt: >-
+  Richten Sie die Willkommensseite für Ihre API ein, um Benutzern bei ihrem
+  ersten Aufruf zu helfen.
 api_config: getting-started
 hidden: true
 icon: icon-book1
