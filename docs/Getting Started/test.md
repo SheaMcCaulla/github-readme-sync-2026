@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Prueba
 deprecated: false
 hidden: false
 icon: 💀
@@ -7,21 +7,21 @@ metadata:
   robots: index
 ---
 <Tabs>
-  <Tab title="Test">
-    other content
+  <Tab title="Prueba">
+    otro contenido
 
-    <Accordion title="test" icon="fa-info-circle">
+    <Accordion title="prueba" icon="fa-info-circle">
 
     </Accordion>
   </Tab>
 </Tabs>
 
-<Accordion title="test" icon="fa-info-circle">
+<Accordion title="prueba" icon="fa-info-circle">
 
 </Accordion>
 
 <Tabs>
-  <Tab title="Test">
+  <Tab title="Prueba">
     <Recipe  />
 
     <Embed title="" typeOfEmbed="youtube" url="https://youtu.be/M34D3Ktovfw?si=kx6-CXA04CkAFb6R" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FM34D3Ktovfw%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DM34D3Ktovfw%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FM34D3Ktovfw%252Fhqdefault.jpg%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
@@ -37,8 +37,8 @@ metadata:
 
   </Tab>
 
-  <Tab title="Rename">
-    content
+  <Tab title="Renombrar">
+    contenido
   </Tab>
 
   <Tab title="hmm">
@@ -49,33 +49,33 @@ metadata:
 
   </Tab>
 
-  <Tab title="new">
+  <Tab title="nuevo">
 
   </Tab>
 
-  <Tab title="Tab 6">
+  <Tab title="Pestaña 6">
 
   </Tab>
 
-  <Tab title="Tab 7">
+  <Tab title="Pestaña 7">
 
   </Tab>
 
-  <Tab title="Tab 8">
+  <Tab title="Pestaña 8">
 
   </Tab>
 
-  <Tab title="Tab 9">
+  <Tab title="Pestaña 9">
     <Accordion title="" icon="fa-info-circle">
 
     </Accordion>
   </Tab>
 
-  <Tab title="Tab 10">
+  <Tab title="Pestaña 10">
 
   </Tab>
 
-  <Tab title="Tab 11">
+  <Tab title="Pestaña 11">
 
   </Tab>
 </Tabs>
@@ -84,33 +84,33 @@ metadata:
 ```
 
 <Cards>
-  <Card title="Card One" icon="fa-rocket">
+  <Card title="Tarjeta uno" icon="fa-rocket">
 
   </Card>
 
-  <Card title="Card Two" icon="fa-code">
+  <Card title="Tarjeta dos" icon="fa-code">
 
   </Card>
 
-  <Card title="Card Three" icon="fa-comments">
+  <Card title="Tarjeta tres" icon="fa-comments">
 
   </Card>
 </Cards>
 
 <Columns layout="fixed">
   <Column>
-    1 side
+    Lado 1
   </Column>
 
   <Column>
-    2 side
+    Lado 2
   </Column>
 </Columns>
 
 ![]()
 
 <Callout icon="📘" theme="info">
-  ### test
+  ### prueba
 </Callout>
 
 <Recipe  />
