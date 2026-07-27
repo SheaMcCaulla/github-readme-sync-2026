@@ -99,11 +99,11 @@ metadata:
 
 <Columns layout="fixed">
   <Column>
-    1 zijde
+    1 kant
   </Column>
 
   <Column>
-    2 zijde
+    2 kant
   </Column>
 </Columns>
 
