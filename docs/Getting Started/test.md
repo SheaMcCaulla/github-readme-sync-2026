@@ -8,7 +8,7 @@ metadata:
 ---
 <Tabs>
   <Tab title="Test">
-    other content
+    anderer Inhalt
 
     <Accordion title="test" icon="fa-info-circle">
 
@@ -37,8 +37,8 @@ metadata:
 
   </Tab>
 
-  <Tab title="Rename">
-    content
+  <Tab title="Umbenennen">
+    Inhalt
   </Tab>
 
   <Tab title="hmm">
@@ -49,7 +49,7 @@ metadata:
 
   </Tab>
 
-  <Tab title="new">
+  <Tab title="neu">
 
   </Tab>
 
@@ -84,33 +84,33 @@ metadata:
 ```
 
 <Cards>
-  <Card title="Card One" icon="fa-rocket">
+  <Card title="Karte Eins" icon="fa-rocket">
 
   </Card>
 
-  <Card title="Card Two" icon="fa-code">
+  <Card title="Karte Zwei" icon="fa-code">
 
   </Card>
 
-  <Card title="Card Three" icon="fa-comments">
+  <Card title="Karte Drei" icon="fa-comments">
 
   </Card>
 </Cards>
 
 <Columns layout="fixed">
   <Column>
-    1 side
+    1. Seite
   </Column>
 
   <Column>
-    2 side
+    2. Seite
   </Column>
 </Columns>
 
 ![]()
 
 <Callout icon="📘" theme="info">
-  ### test
+  ### Test
 </Callout>
 
 <Recipe  />
