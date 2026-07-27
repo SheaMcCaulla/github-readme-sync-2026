@@ -84,15 +84,15 @@ metadata:
 ```
 
 <Cards>
-  <Card title="Cartão Um" icon="fa-rocket">
+  <Card title="Card Um" icon="fa-rocket">
 
   </Card>
 
-  <Card title="Cartão Dois" icon="fa-code">
+  <Card title="Card Dois" icon="fa-code">
 
   </Card>
 
-  <Card title="Cartão Três" icon="fa-comments">
+  <Card title="Card Três" icon="fa-comments">
 
   </Card>
 </Cards>
