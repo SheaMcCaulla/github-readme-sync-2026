@@ -8,7 +8,7 @@ metadata:
 ---
 <Tabs>
   <Tab title="Test">
-    other content
+    andere inhoud
 
     <Accordion title="test" icon="fa-info-circle">
 
@@ -37,8 +37,8 @@ metadata:
 
   </Tab>
 
-  <Tab title="Rename">
-    content
+  <Tab title="Hernoemen">
+    inhoud
   </Tab>
 
   <Tab title="hmm">
@@ -49,7 +49,7 @@ metadata:
 
   </Tab>
 
-  <Tab title="new">
+  <Tab title="nieuw">
 
   </Tab>
 
@@ -84,26 +84,26 @@ metadata:
 ```
 
 <Cards>
-  <Card title="Card One" icon="fa-rocket">
+  <Card title="Kaart één" icon="fa-rocket">
 
   </Card>
 
-  <Card title="Card Two" icon="fa-code">
+  <Card title="Kaart twee" icon="fa-code">
 
   </Card>
 
-  <Card title="Card Three" icon="fa-comments">
+  <Card title="Kaart drie" icon="fa-comments">
 
   </Card>
 </Cards>
 
 <Columns layout="fixed">
   <Column>
-    1 side
+    1 zijde
   </Column>
 
   <Column>
-    2 side
+    2 zijde
   </Column>
 </Columns>
 
