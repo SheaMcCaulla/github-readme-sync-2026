@@ -7,17 +7,17 @@ hidden: false
 </Callout>
 
 <Cards>
-  {/* 아래의 props를 편집하여 이 컴포넌트들을 맞춤 설정하세요 */}
-  <Card title="빠른 시작" href="#" icon="fa-duotone fa-rocket-launch">제품 시작 방법을 알아보세요</Card>
+  {/* 아래의 props를 수정하여 이 컴포넌트들을 커스텀하세요 */}
+  <Card title="빠른 시작" href="#" icon="fa-duotone fa-rocket-launch">제품을 시작하는 방법을 알아보세요</Card>
 
   <Card title="API 레퍼런스" href="#" icon="fa-duotone fa-code-simple">엔드포인트를 탐색하고 통합을 구축하세요</Card>
 
-  <Card title="AI로 구축하기" href="#" icon="fa-duotone fa-sparkles">LLM 기능을 사용하여 워크플로우를 자동화하세요</Card>
+  <Card title="AI로 빌드하기" href="#" icon="fa-duotone fa-sparkles">LLM 기능을 사용하여 워크플로우를 자동화하세요</Card>
 </Cards>
 
 <br />
 
-## 최근 출시 소식
+## 최근 릴리스
 
 <Cards>
   <Card isNew kind="tile" title="v2.0 마이그레이션" href="#" icon="fa-duotone fa-magnifying-glass">업그레이드에 필요한 모든 것</Card>
@@ -32,9 +32,9 @@ hidden: false
 ## 기본 사항
 
 <Cards>
-  <Card kind="tile" title="맞춤 설정" href="#" icon="fa-duotone fa-brush">브랜드에 맞게 위젯 스타일을 지정하세요</Card>
+  <Card kind="tile" title="커스텀" href="#" icon="fa-duotone fa-brush">브랜드에 맞게 위젯 스타일을 지정하세요</Card>
 
-  <Card kind="tile" title="통합" href="#" icon="fa-duotone fa-arrow-down-left-and-arrow-up-right-to-center">타사 서비스와 연결하세요</Card>
+  <Card kind="tile" title="연동" href="#" icon="fa-duotone fa-arrow-down-left-and-arrow-up-right-to-center">타사 서비스와 연결하세요</Card>
 
   <Card kind="tile" title="CLI" href="#" icon="fa-duotone fa-terminal">터미널에서 리소스를 관리하세요</Card>
 
