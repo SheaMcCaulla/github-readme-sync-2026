@@ -1,6 +1,6 @@
 ---
-title: Authentication
-excerpt: Set up the authentication for your API to help users manage their credentials.
+title: 認証
+excerpt: ユーザーが資格情報を管理できるように、APIの認証を設定します。
 api_config: authentication
 hidden: true
 icon: icon-key1
