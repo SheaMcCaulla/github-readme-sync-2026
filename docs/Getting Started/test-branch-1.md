@@ -1,20 +1,20 @@
 ---
-title: Test Branch 1
+title: テストブランチ1
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+「痛み自体を愛する者、追求する者、あるいは手に入れたいと望む者はいない。なぜなら、それは痛みだからである。しかし、時として労苦と苦痛が、何か大きな快楽をもたらすような状況が生じることがある。極めて些細な例を挙げれば、そこから何らかの利益を得るためでなければ、私たちのうちの誰が骨の折れる身体的運動を行うだろうか？しかし、不快な結果を伴わない快楽を享受することを望む者や、いかなる快楽も生み出さない苦痛を避ける者を、誰が正当に非難できるだろうか？」
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+「痛み自体を愛する者、追求する者、あるいは手に入れたいと望む者はいない。なぜなら、それは痛みだからである。しかし、時として労苦と苦痛が、何か大きな快楽をもたらすような状況が生じることがある。極めて些細な例を挙げれば、そこから何らかの利益を得るためでなければ、私たちのうちの誰が骨の折れる身体的運動を行うだろうか？しかし、不快な結果を伴わない快楽を享受することを望む者や、いかなる快楽も生み出さない苦痛を避ける者を、誰が正当に非難できるだろうか？」
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+「痛み自体を愛する者、追求する者、あるいは手に入れたいと望む者はいない。なぜなら、それは痛みだからである。しかし、時として労苦と苦痛が、何か大きな快楽をもたらすような状況が生じることがある。極めて些細な例を挙げれば、そこから何らかの利益を得るためでなければ、私たちのうちの誰が骨の折れる身体的運動を行うだろうか？しかし、不快な結果を伴わない快楽を享受することを望む者や、いかなる快楽も生み出さない苦痛を避ける者を、誰が正当に非難できるだろうか？」
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+「痛み自体を愛する者、追求する者、あるいは手に入れたいと望む者はいない。なぜなら、それは痛みだからである。しかし、時として労苦と苦痛が、何か大きな快楽をもたらすような状況が生じることがある。極めて些細な例を挙げれば、そこから何らかの利益を得るためでなければ、私たちのうちの誰が骨の折れる身体的運動を行うだろうか？しかし、不快な結果を伴わない快楽を享受することを望む者や、いかなる快楽も生み出さない苦痛を避ける者を、誰が正当に非難できるだろうか？」
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+「痛み自体を愛する者、追求する者、あるいは手に入れたいと望む者はいない。なぜなら、それは痛みだからである。しかし、時として労苦と苦痛が、何か大きな快楽をもたらすような状況が生じることがある。極めて些細な例を挙げれば、そこから何らかの利益を得るためでなければ、私たちのうちの誰が骨の折れる身体的運動を行うだろうか？しかし、不快な結果を伴わない快楽を享受することを望む者や、いかなる快楽も生み出さない苦痛を避ける者を、誰が正当に非難できるだろうか？」
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+「痛み自体を愛する者、追求する者、あるいは手に入れたいと望む者はいない。なぜなら、それは痛みだからである。しかし、時として労苦と苦痛が、何か大きな快楽をもたらすような状況が生じることがある。極めて些細な例を挙げれば、そこから何らかの利益を得るためでなければ、私たちのうちの誰が骨の折れる身体的運動を行うだろうか？しかし、不快な結果を伴わない快楽を享受することを望む者や、いかなる快楽も生み出さない苦痛を避ける者を、誰が正当に非難できるだろうか？」
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+「痛み自体を愛する者、追求する者、あるいは手に入れたいと望む者はいない。なぜなら、それは痛みだからである。しかし、時として労苦と苦痛が、何か大きな快楽をもたらすような状況が生じることがある。極めて些細な例を挙げれば、そこから何らかの利益を得るためでなければ、私たちのうちの誰が骨の折れる身体的運動を行うだろうか？しかし、不快な結果を伴わない快楽を享受することを望む者や、いかなる快楽も生み出さない苦痛を避ける者を、誰が正当に非難できるだろうか？」
