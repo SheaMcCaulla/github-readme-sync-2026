@@ -1,48 +1,48 @@
 ---
-title: Welcome to the Developer Hub
+title: Bienvenue sur le Developer Hub
 hidden: false
 ---
 <Callout icon="📘" theme="info">
-  **Template:**  Delete this callout and edit this page with your content and links.
+  **Modèle :** Supprimez cet encadré et modifiez cette page avec votre contenu et vos liens.
 </Callout>
 
 <Cards>
-  {/* Edit the props below to customize these components */}
-  <Card title="Quick Start" href="#" icon="fa-duotone fa-rocket-launch">Learn how to get started with our product</Card>
+  {/* Modifiez les propriétés ci-dessous pour personnaliser ces composants */}
+  <Card title="Démarrage rapide" href="#" icon="fa-duotone fa-rocket-launch">Découvrez comment démarrer avec notre produit</Card>
 
-  <Card title="API Reference" href="#" icon="fa-duotone fa-code-simple">Explore endpoints and build your integration</Card>
+  <Card title="Référence API" href="#" icon="fa-duotone fa-code-simple">Explorez les points de terminaison et construisez votre intégration</Card>
 
-  <Card title="Build with AI" href="#" icon="fa-duotone fa-sparkles">Use LLM features to automate your workflow</Card>
+  <Card title="Développer avec l'IA" href="#" icon="fa-duotone fa-sparkles">Utilisez les fonctionnalités LLM pour automatiser votre flux de travail</Card>
 </Cards>
 
 <br />
 
-## Recent Releases
+## Dernières versions
 
 <Cards>
-  <Card isNew kind="tile" title="v2.0 Migration" href="#" icon="fa-duotone fa-magnifying-glass">Everything you need to upgrade</Card>
+  <Card isNew kind="tile" title="Migration v2.0" href="#" icon="fa-duotone fa-magnifying-glass">Tout ce dont vous avez besoin pour mettre à niveau</Card>
 
-  <Card kind="tile" title="Webhooks" href="#" icon="fa-duotone fa-bullhorn">Real-time events are now available</Card>
+  <Card kind="tile" title="Webhooks" href="#" icon="fa-duotone fa-bullhorn">Les événements en temps réel sont désormais disponibles</Card>
 
-  <Card kind="tile" title="Android SDK" href="#" icon="fa-duotone fa-robot">Our native Android library is out of beta</Card>
+  <Card kind="tile" title="SDK Android" href="#" icon="fa-duotone fa-robot">Notre bibliothèque Android native n'est plus en bêta</Card>
 </Cards>
 
 <br />
 
-## The Basics
+## Les bases
 
 <Cards>
-  <Card kind="tile" title="Customize" href="#" icon="fa-duotone fa-brush">Style the widget to match your brand</Card>
+  <Card kind="tile" title="Personnaliser" href="#" icon="fa-duotone fa-brush">Adaptez le style du widget à votre marque</Card>
 
-  <Card kind="tile" title="Integrations" href="#" icon="fa-duotone fa-arrow-down-left-and-arrow-up-right-to-center">Connect with third-party services</Card>
+  <Card kind="tile" title="Intégrations" href="#" icon="fa-duotone fa-arrow-down-left-and-arrow-up-right-to-center">Connectez-vous à des services tiers</Card>
 
-  <Card kind="tile" title="CLI" href="#" icon="fa-duotone fa-terminal">Manage resources from your terminal</Card>
+  <Card kind="tile" title="CLI" href="#" icon="fa-duotone fa-terminal">Gérez les ressources depuis votre terminal</Card>
 
-  <Card kind="tile" title="Security" href="" icon="fa-duotone fa-shield-dog">Learn how we secure your data</Card>
+  <Card kind="tile" title="Sécurité" href="" icon="fa-duotone fa-shield-dog">Découvrez comment nous sécurisons vos données</Card>
 
-  <Card kind="tile" title="Common Issues" href="" icon="fa-duotone fa-file-circle-info">Troubleshoot common issues</Card>
+  <Card kind="tile" title="Problèmes courants" href="" icon="fa-duotone fa-file-circle-info">Résolvez les problèmes les plus fréquents</Card>
 
-  <Card kind="tile" title="Sync" href="#" icon="fa-duotone fa-code-compare">Connect to a storage provider</Card>
+  <Card kind="tile" title="Synchronisation" href="#" icon="fa-duotone fa-code-compare">Connectez-vous à un fournisseur de stockage</Card>
 </Cards>
 
 <br />
