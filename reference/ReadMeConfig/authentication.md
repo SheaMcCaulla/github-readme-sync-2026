@@ -1,6 +1,8 @@
 ---
-title: Authentication
-excerpt: Set up the authentication for your API to help users manage their credentials.
+title: Uthibitishaji
+excerpt: >-
+  Sanidi uthibitishaji wa API yako ili kusaidia watumiaji kudhibiti vitambulisho
+  vyao.
 api_config: authentication
 hidden: true
 icon: icon-key1
