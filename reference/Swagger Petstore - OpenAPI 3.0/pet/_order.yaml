@@ -4,3 +4,4 @@
 - deletepet
 - findpetsbystatus
 - findpetsbytags
+- getpetbyid
