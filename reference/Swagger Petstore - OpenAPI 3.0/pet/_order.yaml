@@ -3,3 +3,4 @@
 - addpet
 - deletepet
 - findpetsbystatus
+- findpetsbytags
