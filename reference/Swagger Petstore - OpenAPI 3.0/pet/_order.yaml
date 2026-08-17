@@ -4,3 +4,4 @@
 - addpet
 - findpetsbystatus
 - findpetsbytags
+- getpetbyid
