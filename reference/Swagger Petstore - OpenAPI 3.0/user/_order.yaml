@@ -4,3 +4,4 @@
 - createuserswithlistinput
 - deleteuser
 - getuserbyname
+- logoutuser
