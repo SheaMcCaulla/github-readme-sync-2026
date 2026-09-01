@@ -1,4 +1,5 @@
 ---
-title: ''
-excerpt: Tudo sobre os seus Pets
+title: pet
+excerpt: Everything about your Pets
+hidden: false
 ---

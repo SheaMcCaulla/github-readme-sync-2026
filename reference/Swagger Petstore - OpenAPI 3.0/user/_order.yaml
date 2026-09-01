@@ -5,3 +5,10 @@
 - deleteuser
 - getuserbyname
 - logoutuser
+- createuser-1
+- createuserswithlistinput-1
+- loginuser-1
+- logoutuser-1
+- getuserbyname-1
+- updateuser-1
+- deleteuser-1
