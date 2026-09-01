@@ -2,7 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "Swagger Petstore - OpenAPI 3.0",
-    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSwagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!\nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.\nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\nSome useful links:\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+    "description": "Huu ni mfano wa Seva ya Duka la Wanyama wa Kufugwa kulingana na vipimo vya OpenAPI 3.0. Unaweza kupata maelezo zaidi kuhusu\nSwagger kwenye [https://swagger.io](https://swagger.io). Katika marudio ya tatu ya duka la wanyama wa kufugwa, tumehamia kwenye mbinu ya kuanza na muundo!\nSasa unaweza kutusaidia kuboresha API iwe ni kwa kufanya mabadiliko kwenye ufafanuzi wenyewe au kwenye msimbo.\nKwa njia hiyo, baada ya muda, tunaweza kuboresha API kwa ujumla, na kuonyesha baadhi ya vipengele vipya katika OAS3.\n\nBaadhi ya viungo muhimu:\n- [Hazina ya Duka la Wanyama wa Kufugwa](https://github.com/swagger-api/swagger-petstore)\n- [Ufafanuzi wa chanzo cha API cha Duka la Wanyama wa Kufugwa](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
     "termsOfService": "https://swagger.io/terms/",
     "contact": {
       "email": "apiteam@swagger.io"
@@ -14,7 +14,7 @@
     "version": "1.0.27"
   },
   "externalDocs": {
-    "description": "Find out more about Swagger",
+    "description": "Pata maelezo zaidi kuhusu Swagger",
     "url": "https://swagger.io"
   },
   "servers": [
@@ -25,23 +25,23 @@
   "tags": [
     {
       "name": "pet",
-      "description": "Everything about your Pets",
+      "description": "Kila kitu kuhusu Wanyama wako wa Kufugwa",
       "externalDocs": {
-        "description": "Find out more",
+        "description": "Pata maelezo zaidi",
         "url": "https://swagger.io"
       }
     },
     {
       "name": "store",
-      "description": "Access to Petstore orders",
+      "description": "Ufikiaji wa maagizo ya Petstore",
       "externalDocs": {
-        "description": "Find out more about our store",
+        "description": "Pata maelezo zaidi kuhusu duka letu",
         "url": "https://swagger.io"
       }
     },
     {
       "name": "user",
-      "description": "Operations about user"
+      "description": "Shughuli kuhusu mtumiaji"
     }
   ],
   "paths": {
@@ -50,11 +50,11 @@
         "tags": [
           "pet"
         ],
-        "summary": "Update an existing pet.",
-        "description": "Update an existing pet by Id.",
+        "summary": "Sasisha mnyama wa kufugwa aliyepo.",
+        "description": "Sasisha mnyama wa kufugwa aliyepo kwa Id.",
         "operationId": "updatePet",
         "requestBody": {
-          "description": "Update an existent pet in the store",
+          "description": "Sasisha mnyama wa kufugwa aliyepo dukani",
           "content": {
             "application/json": {
               "schema": {
@@ -76,7 +76,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Shughuli imefanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -91,16 +91,16 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "ID iliyotolewa si sahihi"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "Mnyama wa kufugwa hajapatikana"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "Hitilafu ya uthibitishaji"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         },
         "security": [
@@ -116,11 +116,11 @@
         "tags": [
           "pet"
         ],
-        "summary": "Add a new pet to the store.",
-        "description": "Add a new pet to the store.",
+        "summary": "Ongeza mnyama mpya wa kufugwa dukani.",
+        "description": "Ongeza mnyama mpya wa kufugwa dukani.",
         "operationId": "addPet",
         "requestBody": {
-          "description": "Create a new pet in the store",
+          "description": "Unda mnyama mpya wa kufugwa dukani",
           "content": {
             "application/json": {
               "schema": {
@@ -142,7 +142,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Shughuli imefanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -157,13 +157,13 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "Ingizo si sahihi"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "Hitilafu ya uthibitishaji"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         },
         "security": [
@@ -181,14 +181,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Finds Pets by status.",
-        "description": "Multiple status values can be provided with comma separated strings.",
+        "summary": "Hupata Wanyama wa Kufugwa kwa hali.",
+        "description": "Thamani nyingi za hali zinaweza kutolewa kwa mifuatano iliyotenganishwa kwa koma.",
         "operationId": "findPetsByStatus",
         "parameters": [
           {
             "name": "status",
             "in": "query",
-            "description": "Status values that need to be considered for filter",
+            "description": "Thamani za hali zinazohitaji kuzingatiwa kwa ajili ya kichujio",
             "required": true,
             "explode": true,
             "schema": {
@@ -204,7 +204,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "shughuli imefanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -225,10 +225,10 @@
             }
           },
           "400": {
-            "description": "Invalid status value"
+            "description": "Thamani ya hali si sahihi"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         },
         "security": [
@@ -246,14 +246,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Finds Pets by tags.",
-        "description": "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.",
+        "summary": "Hupata Wanyama wa Kufugwa kwa lebo.",
+        "description": "Lebo nyingi zinaweza kutolewa kwa mifuatano iliyotenganishwa kwa koma. Tumia tag1, tag2, tag3 kwa ajili ya kujaribu.",
         "operationId": "findPetsByTags",
         "parameters": [
           {
             "name": "tags",
             "in": "query",
-            "description": "Tags to filter by",
+            "description": "Lebo za kuchuja kwazo",
             "required": true,
             "explode": true,
             "schema": {
@@ -266,7 +266,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "shughuli imefanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -287,10 +287,10 @@
             }
           },
           "400": {
-            "description": "Invalid tag value"
+            "description": "Thamani ya lebo si sahihi"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         },
         "security": [
@@ -308,14 +308,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Find pet by ID.",
-        "description": "Returns a single pet.",
+        "summary": "Pata mnyama wa kufugwa kwa ID.",
+        "description": "Hurejesha mnyama mmoja wa kufugwa.",
         "operationId": "getPetById",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet to return",
+            "description": "ID ya mnyama wa kufugwa wa kurejeshwa",
             "required": true,
             "schema": {
               "type": "integer",
@@ -325,7 +325,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "shughuli imefanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -340,13 +340,13 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "ID iliyotolewa si sahihi"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "Mnyama wa kufugwa hajapatikana"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         },
         "security": [
@@ -365,14 +365,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Updates a pet in the store with form data.",
-        "description": "Updates a pet resource based on the form data.",
+        "summary": "Husasisha mnyama wa kufugwa dukani kwa data ya fomu.",
+        "description": "Husasisha rasilimali ya mnyama wa kufugwa kulingana na data ya fomu.",
         "operationId": "updatePetWithForm",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet that needs to be updated",
+            "description": "ID ya mnyama wa kufugwa anayehitaji kusasishwa",
             "required": true,
             "schema": {
               "type": "integer",
@@ -382,7 +382,7 @@
           {
             "name": "name",
             "in": "query",
-            "description": "Name of pet that needs to be updated",
+            "description": "Jina la mnyama wa kufugwa anayehitaji kusasishwa",
             "schema": {
               "type": "string"
             }
@@ -390,7 +390,7 @@
           {
             "name": "status",
             "in": "query",
-            "description": "Status of pet that needs to be updated",
+            "description": "Hali ya mnyama wa kufugwa anayehitaji kusasishwa",
             "schema": {
               "type": "string"
             }
@@ -398,7 +398,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "shughuli imefanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -413,10 +413,10 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "Ingizo si sahihi"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         },
         "security": [
@@ -432,8 +432,8 @@
         "tags": [
           "pet"
         ],
-        "summary": "Deletes a pet.",
-        "description": "Delete a pet.",
+        "summary": "Hufuta mnyama wa kufugwa.",
+        "description": "Futa mnyama kipenzi.",
         "operationId": "deletePet",
         "parameters": [
           {
@@ -448,7 +448,7 @@
           {
             "name": "petId",
             "in": "path",
-            "description": "Pet id to delete",
+            "description": "ID ya mnyama kipenzi ya kufuta",
             "required": true,
             "schema": {
               "type": "integer",
@@ -458,13 +458,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Pet deleted"
+            "description": "Mnyama kipenzi amefutwa"
           },
           "400": {
-            "description": "Invalid pet value"
+            "description": "Thamani isiyo sahihi ya mnyama kipenzi"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         },
         "security": [
@@ -482,14 +482,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Uploads an image.",
-        "description": "Upload image of the pet.",
+        "summary": "Hupakia picha.",
+        "description": "Pakia picha ya mnyama kipenzi.",
         "operationId": "uploadFile",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet to update",
+            "description": "ID ya mnyama kipenzi ya kusasisha",
             "required": true,
             "schema": {
               "type": "integer",
@@ -499,7 +499,7 @@
           {
             "name": "additionalMetadata",
             "in": "query",
-            "description": "Additional Metadata",
+            "description": "Metadata ya Ziada",
             "required": false,
             "schema": {
               "type": "string"
@@ -518,7 +518,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "operesheni iliyofanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -528,13 +528,13 @@
             }
           },
           "400": {
-            "description": "No file uploaded"
+            "description": "Hakuna faili iliyopakiliwa"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "Mnyama kipenzi hajapatikana"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         },
         "security": [
@@ -552,12 +552,12 @@
         "tags": [
           "store"
         ],
-        "summary": "Returns pet inventories by status.",
-        "description": "Returns a map of status codes to quantities.",
+        "summary": "Hurejesha orodha ya wanyama kipenzi kulingana na hali.",
+        "description": "Hurejesha ramani ya misimbo ya hali kwa idadi.",
         "operationId": "getInventory",
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "operesheni iliyofanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -571,7 +571,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         },
         "security": [
@@ -586,8 +586,8 @@
         "tags": [
           "store"
         ],
-        "summary": "Place an order for a pet.",
-        "description": "Place a new order in the store.",
+        "summary": "Weka agizo la mnyama kipenzi.",
+        "description": "Weka agizo jipya kwenye duka.",
         "operationId": "placeOrder",
         "requestBody": {
           "content": {
@@ -610,7 +610,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "operesheni iliyofanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -620,13 +620,13 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "Ingizo lisilo sahihi"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "Hitilafu ya uthibitishaji"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         }
       }
@@ -636,14 +636,14 @@
         "tags": [
           "store"
         ],
-        "summary": "Find purchase order by ID.",
-        "description": "For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions.",
+        "summary": "Tafuta agizo la ununuzi kwa ID.",
+        "description": "Kwa majibu sahihi jaribu ID za nambari kamili zenye thamani <= 5 au > 10. Thamani zingine zitazalisha hitilafu.",
         "operationId": "getOrderById",
         "parameters": [
           {
             "name": "orderId",
             "in": "path",
-            "description": "ID of order that needs to be fetched",
+            "description": "ID ya agizo linalohitaji kuchukuliwa",
             "required": true,
             "schema": {
               "type": "integer",
@@ -653,7 +653,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "operesheni iliyofanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -668,13 +668,13 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "ID iliyotolewa si sahihi"
           },
           "404": {
-            "description": "Order not found"
+            "description": "Agizo halijapatikana"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         }
       },
@@ -682,14 +682,14 @@
         "tags": [
           "store"
         ],
-        "summary": "Delete purchase order by identifier.",
-        "description": "For valid response try integer IDs with value < 1000. Anything above 1000 or non-integers will generate API errors.",
+        "summary": "Futa agizo la ununuzi kwa kitambulisho.",
+        "description": "Kwa majibu sahihi jaribu ID za nambari kamili zenye thamani < 1000. Kitu chochote kilicho juu ya 1000 au zisizo nambari kamili kitazalisha hitilafu za API.",
         "operationId": "deleteOrder",
         "parameters": [
           {
             "name": "orderId",
             "in": "path",
-            "description": "ID of the order that needs to be deleted",
+            "description": "ID ya agizo linalohitaji kufutwa",
             "required": true,
             "schema": {
               "type": "integer",
@@ -699,16 +699,16 @@
         ],
         "responses": {
           "200": {
-            "description": "order deleted"
+            "description": "agizo limefutwa"
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "ID iliyotolewa si sahihi"
           },
           "404": {
-            "description": "Order not found"
+            "description": "Agizo halijapatikana"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         }
       }
@@ -718,11 +718,11 @@
         "tags": [
           "user"
         ],
-        "summary": "Create user.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "Unda mtumiaji.",
+        "description": "Hili linaweza tu kufanywa na mtumiaji aliyeingia.",
         "operationId": "createUser",
         "requestBody": {
-          "description": "Created user object",
+          "description": "Kitu cha mtumiaji kilichoundwa",
           "content": {
             "application/json": {
               "schema": {
@@ -743,7 +743,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "operesheni iliyofanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -758,7 +758,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         }
       }
@@ -768,8 +768,8 @@
         "tags": [
           "user"
         ],
-        "summary": "Creates list of users with given input array.",
-        "description": "Creates list of users with given input array.",
+        "summary": "Huunda orodha ya watumiaji kwa safu ya ingizo iliyotolewa.",
+        "description": "Huunda orodha ya watumiaji kwa safu ya ingizo iliyotolewa.",
         "operationId": "createUsersWithListInput",
         "requestBody": {
           "content": {
@@ -785,7 +785,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Operesheni iliyofanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -800,7 +800,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         }
       }
@@ -810,14 +810,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Logs user into the system.",
-        "description": "Log into the system.",
+        "summary": "Huingiza mtumiaji kwenye mfumo.",
+        "description": "Ingia kwenye mfumo.",
         "operationId": "loginUser",
         "parameters": [
           {
             "name": "username",
             "in": "query",
-            "description": "The user name for login",
+            "description": "Jina la mtumiaji la kuingia",
             "required": false,
             "schema": {
               "type": "string"
@@ -826,7 +826,7 @@
           {
             "name": "password",
             "in": "query",
-            "description": "The password for login in clear text",
+            "description": "Nenosiri la kuingia katika maandishi wazi",
             "required": false,
             "schema": {
               "type": "string"
@@ -835,17 +835,17 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "operesheni iliyofanikiwa",
             "headers": {
               "X-Rate-Limit": {
-                "description": "calls per hour allowed by the user",
+                "description": "miito kwa saa inayoruhusiwa na mtumiaji",
                 "schema": {
                   "type": "integer",
                   "format": "int32"
                 }
               },
               "X-Expires-After": {
-                "description": "date in UTC when token expires",
+                "description": "tarehe katika UTC wakati tokeni inapoisha muda wake",
                 "schema": {
                   "type": "string",
                   "format": "date-time"
@@ -866,10 +866,10 @@
             }
           },
           "400": {
-            "description": "Invalid username/password supplied"
+            "description": "Jina la mtumiaji/nenosiri batili limetolewa"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         }
       }
@@ -879,16 +879,16 @@
         "tags": [
           "user"
         ],
-        "summary": "Logs out current logged in user session.",
-        "description": "Log user out of the system.",
+        "summary": "Inamtoa nje mtumiaji aliyeingia sasa kwenye kipindi.",
+        "description": "Mtoe mtumiaji kwenye mfumo.",
         "operationId": "logoutUser",
         "parameters": [],
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "operesheni iliyofanikiwa"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         }
       }
@@ -898,14 +898,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Get user by user name.",
-        "description": "Get user detail based on username.",
+        "summary": "Mpate mtumiaji kwa jina la mtumiaji.",
+        "description": "Pata maelezo ya mtumiaji kulingana na jina la mtumiaji.",
         "operationId": "getUserByName",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "The name that needs to be fetched. Use user1 for testing",
+            "description": "Jina linalohitaji kupatikana. Tumia user1 kwa majaribio",
             "required": true,
             "schema": {
               "type": "string"
@@ -914,7 +914,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "operesheni iliyofanikiwa",
             "content": {
               "application/json": {
                 "schema": {
@@ -929,13 +929,13 @@
             }
           },
           "400": {
-            "description": "Invalid username supplied"
+            "description": "Jina la mtumiaji batili limetolewa"
           },
           "404": {
-            "description": "User not found"
+            "description": "Mtumiaji hajapatikana"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         }
       },
@@ -943,14 +943,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Update user resource.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "Sasisha rasilimali ya mtumiaji.",
+        "description": "Hili linaweza tu kufanywa na mtumiaji aliyeingia.",
         "operationId": "updateUser",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "name that need to be deleted",
+            "description": "jina linalohitaji kufutwa",
             "required": true,
             "schema": {
               "type": "string"
@@ -958,7 +958,7 @@
           }
         ],
         "requestBody": {
-          "description": "Update an existent user in the store",
+          "description": "Sasisha mtumiaji aliyepo kwenye duka",
           "content": {
             "application/json": {
               "schema": {
@@ -979,16 +979,16 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "operesheni iliyofanikiwa"
           },
           "400": {
-            "description": "bad request"
+            "description": "ombi batili"
           },
           "404": {
-            "description": "user not found"
+            "description": "mtumiaji hajapatikana"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         }
       },
@@ -996,14 +996,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Delete user resource.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "Futa rasilimali ya mtumiaji.",
+        "description": "Hili linaweza tu kufanywa na mtumiaji aliyeingia.",
         "operationId": "deleteUser",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "The name that needs to be deleted",
+            "description": "Jina linalohitaji kufutwa",
             "required": true,
             "schema": {
               "type": "string"
@@ -1012,16 +1012,16 @@
         ],
         "responses": {
           "200": {
-            "description": "User deleted"
+            "description": "Mtumiaji amefutwa"
           },
           "400": {
-            "description": "Invalid username supplied"
+            "description": "Jina la mtumiaji batili limetolewa"
           },
           "404": {
-            "description": "User not found"
+            "description": "Mtumiaji hajapatikana"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Hitilafu isiyotarajiwa"
           }
         }
       }
@@ -1053,7 +1053,7 @@
           },
           "status": {
             "type": "string",
-            "description": "Order Status",
+            "description": "Hali ya Agizo",
             "example": "approved",
             "enum": [
               "placed",
@@ -1120,7 +1120,7 @@
           },
           "userStatus": {
             "type": "integer",
-            "description": "User Status",
+            "description": "Hali ya Mtumiaji",
             "format": "int32",
             "example": 1
           }
@@ -1186,7 +1186,7 @@
           },
           "status": {
             "type": "string",
-            "description": "pet status in the store",
+            "description": "hali ya mnyama kipenzi kwenye duka",
             "enum": [
               "available",
               "pending",
@@ -1266,5 +1266,8 @@
         "in": "header"
       }
     }
+  },
+  "x-readme-ai-translation": {
+    "sourceHash": "9d6e66f97c6d9213"
   }
 }
