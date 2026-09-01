@@ -2,7 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "Swagger Petstore - OpenAPI 3.0",
-    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSwagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!\nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.\nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\nSome useful links:\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+    "description": "这是一个基于 OpenAPI 3.0 规范的宠物商店服务器示例。您可以在 [https://swagger.io](https://swagger.io) 了解更多关于 Swagger 的信息。在宠物商店的第三次迭代中，我们已经转向了设计优先（design-first）的方法！\n现在，无论是通过修改定义本身还是修改代码，您都可以帮助我们改进 API。\n这样，随着时间的推移，我们可以总体上改进 API，并展示 OAS3 中的一些新特性。\n\n一些有用的链接：\n- [宠物商店仓库](https://github.com/swagger-api/swagger-petstore)\n- [宠物商店的源 API 定义](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
     "termsOfService": "https://swagger.io/terms/",
     "contact": {
       "email": "apiteam@swagger.io"
@@ -14,7 +14,7 @@
     "version": "1.0.27"
   },
   "externalDocs": {
-    "description": "Find out more about Swagger",
+    "description": "了解更多关于 Swagger 的信息",
     "url": "https://swagger.io"
   },
   "servers": [
@@ -25,23 +25,23 @@
   "tags": [
     {
       "name": "pet",
-      "description": "Everything about your Pets",
+      "description": "关于您的宠物的一切",
       "externalDocs": {
-        "description": "Find out more",
+        "description": "了解更多",
         "url": "https://swagger.io"
       }
     },
     {
       "name": "store",
-      "description": "Access to Petstore orders",
+      "description": "访问宠物商店订单",
       "externalDocs": {
-        "description": "Find out more about our store",
+        "description": "了解更多关于我们商店的信息",
         "url": "https://swagger.io"
       }
     },
     {
       "name": "user",
-      "description": "Operations about user"
+      "description": "关于用户的操作"
     }
   ],
   "paths": {
@@ -50,11 +50,11 @@
         "tags": [
           "pet"
         ],
-        "summary": "Update an existing pet.",
-        "description": "Update an existing pet by Id.",
+        "summary": "更新现有的宠物。",
+        "description": "通过 ID 更新现有的宠物。",
         "operationId": "updatePet",
         "requestBody": {
-          "description": "Update an existent pet in the store",
+          "description": "更新商店中现有的宠物",
           "content": {
             "application/json": {
               "schema": {
@@ -76,7 +76,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -91,16 +91,16 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "提供的 ID 无效"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "未找到宠物"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "验证异常"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         },
         "security": [
@@ -116,11 +116,11 @@
         "tags": [
           "pet"
         ],
-        "summary": "Add a new pet to the store.",
-        "description": "Add a new pet to the store.",
+        "summary": "向商店添加新宠物。",
+        "description": "向商店添加新宠物。",
         "operationId": "addPet",
         "requestBody": {
-          "description": "Create a new pet in the store",
+          "description": "在商店中创建新宠物",
           "content": {
             "application/json": {
               "schema": {
@@ -142,7 +142,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -157,13 +157,13 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "无效输入"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "验证异常"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         },
         "security": [
@@ -181,14 +181,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Finds Pets by status.",
-        "description": "Multiple status values can be provided with comma separated strings.",
+        "summary": "根据状态查找宠物。",
+        "description": "可以使用逗号分隔的字符串提供多个状态值。",
         "operationId": "findPetsByStatus",
         "parameters": [
           {
             "name": "status",
             "in": "query",
-            "description": "Status values that need to be considered for filter",
+            "description": "过滤时需要考虑的状态值",
             "required": true,
             "explode": true,
             "schema": {
@@ -204,7 +204,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -225,10 +225,10 @@
             }
           },
           "400": {
-            "description": "Invalid status value"
+            "description": "无效的状态值"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         },
         "security": [
@@ -246,14 +246,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Finds Pets by tags.",
-        "description": "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.",
+        "summary": "根据标签查找宠物。",
+        "description": "可以使用逗号分隔的字符串提供多个标签。测试时请使用 tag1, tag2, tag3。",
         "operationId": "findPetsByTags",
         "parameters": [
           {
             "name": "tags",
             "in": "query",
-            "description": "Tags to filter by",
+            "description": "用于过滤的标签",
             "required": true,
             "explode": true,
             "schema": {
@@ -266,7 +266,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -287,10 +287,10 @@
             }
           },
           "400": {
-            "description": "Invalid tag value"
+            "description": "无效的标签值"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         },
         "security": [
@@ -308,14 +308,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Find pet by ID.",
-        "description": "Returns a single pet.",
+        "summary": "根据 ID 查找宠物。",
+        "description": "返回单个宠物。",
         "operationId": "getPetById",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet to return",
+            "description": "要返回的宠物 ID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -325,7 +325,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -340,13 +340,13 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "提供的 ID 无效"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "未找到宠物"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         },
         "security": [
@@ -365,14 +365,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Updates a pet in the store with form data.",
-        "description": "Updates a pet resource based on the form data.",
+        "summary": "使用表单数据更新商店中的宠物。",
+        "description": "根据表单数据更新宠物资源。",
         "operationId": "updatePetWithForm",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet that needs to be updated",
+            "description": "需要更新的宠物 ID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -382,7 +382,7 @@
           {
             "name": "name",
             "in": "query",
-            "description": "Name of pet that needs to be updated",
+            "description": "需要更新的宠物名称",
             "schema": {
               "type": "string"
             }
@@ -390,7 +390,7 @@
           {
             "name": "status",
             "in": "query",
-            "description": "Status of pet that needs to be updated",
+            "description": "需要更新的宠物状态",
             "schema": {
               "type": "string"
             }
@@ -398,7 +398,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -413,10 +413,10 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "无效输入"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         },
         "security": [
@@ -432,8 +432,8 @@
         "tags": [
           "pet"
         ],
-        "summary": "Deletes a pet.",
-        "description": "Delete a pet.",
+        "summary": "删除宠物。",
+        "description": "删除宠物。",
         "operationId": "deletePet",
         "parameters": [
           {
@@ -448,7 +448,7 @@
           {
             "name": "petId",
             "in": "path",
-            "description": "Pet id to delete",
+            "description": "要删除的宠物 ID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -458,13 +458,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Pet deleted"
+            "description": "宠物已删除"
           },
           "400": {
-            "description": "Invalid pet value"
+            "description": "无效的宠物值"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "意外错误"
           }
         },
         "security": [
@@ -482,14 +482,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Uploads an image.",
-        "description": "Upload image of the pet.",
+        "summary": "上传图片。",
+        "description": "上传宠物的图片。",
         "operationId": "uploadFile",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet to update",
+            "description": "要更新的宠物 ID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -499,7 +499,7 @@
           {
             "name": "additionalMetadata",
             "in": "query",
-            "description": "Additional Metadata",
+            "description": "附加元数据",
             "required": false,
             "schema": {
               "type": "string"
@@ -518,7 +518,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -528,13 +528,13 @@
             }
           },
           "400": {
-            "description": "No file uploaded"
+            "description": "未上传文件"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "未找到宠物"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "意外错误"
           }
         },
         "security": [
@@ -552,12 +552,12 @@
         "tags": [
           "store"
         ],
-        "summary": "Returns pet inventories by status.",
-        "description": "Returns a map of status codes to quantities.",
+        "summary": "按状态返回宠物库存。",
+        "description": "返回状态码与数量的映射。",
         "operationId": "getInventory",
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -571,7 +571,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "意外错误"
           }
         },
         "security": [
@@ -586,8 +586,8 @@
         "tags": [
           "store"
         ],
-        "summary": "Place an order for a pet.",
-        "description": "Place a new order in the store.",
+        "summary": "下宠物订单。",
+        "description": "在商店中下新订单。",
         "operationId": "placeOrder",
         "requestBody": {
           "content": {
@@ -610,7 +610,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -620,13 +620,13 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "无效输入"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "验证异常"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "意外错误"
           }
         }
       }
@@ -636,14 +636,14 @@
         "tags": [
           "store"
         ],
-        "summary": "Find purchase order by ID.",
-        "description": "For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions.",
+        "summary": "按 ID 查找采购订单。",
+        "description": "要获得有效响应，请尝试使用值 <= 5 或 > 10 的整数 ID。其他值将产生异常。",
         "operationId": "getOrderById",
         "parameters": [
           {
             "name": "orderId",
             "in": "path",
-            "description": "ID of order that needs to be fetched",
+            "description": "需要获取的订单 ID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -653,7 +653,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -668,13 +668,13 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "提供的 ID 无效"
           },
           "404": {
-            "description": "Order not found"
+            "description": "未找到订单"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "意外错误"
           }
         }
       },
@@ -682,14 +682,14 @@
         "tags": [
           "store"
         ],
-        "summary": "Delete purchase order by identifier.",
-        "description": "For valid response try integer IDs with value < 1000. Anything above 1000 or non-integers will generate API errors.",
+        "summary": "按标识符删除采购订单。",
+        "description": "要获得有效响应，请尝试使用值 < 1000 的整数 ID。任何大于 1000 的值或非整数都将产生 API 错误。",
         "operationId": "deleteOrder",
         "parameters": [
           {
             "name": "orderId",
             "in": "path",
-            "description": "ID of the order that needs to be deleted",
+            "description": "需要删除的订单 ID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -699,16 +699,16 @@
         ],
         "responses": {
           "200": {
-            "description": "order deleted"
+            "description": "订单已删除"
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "提供的 ID 无效"
           },
           "404": {
-            "description": "Order not found"
+            "description": "未找到订单"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "意外错误"
           }
         }
       }
@@ -718,11 +718,11 @@
         "tags": [
           "user"
         ],
-        "summary": "Create user.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "创建用户。",
+        "description": "此操作只能由已登录的用户执行。",
         "operationId": "createUser",
         "requestBody": {
-          "description": "Created user object",
+          "description": "已创建的用户对象",
           "content": {
             "application/json": {
               "schema": {
@@ -743,7 +743,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -758,7 +758,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "意外错误"
           }
         }
       }
@@ -768,8 +768,8 @@
         "tags": [
           "user"
         ],
-        "summary": "Creates list of users with given input array.",
-        "description": "Creates list of users with given input array.",
+        "summary": "使用给定的输入数组创建用户列表。",
+        "description": "使用给定的输入数组创建用户列表。",
         "operationId": "createUsersWithListInput",
         "requestBody": {
           "content": {
@@ -785,7 +785,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -800,7 +800,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "意外错误"
           }
         }
       }
@@ -810,14 +810,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Logs user into the system.",
-        "description": "Log into the system.",
+        "summary": "将用户登录到系统。",
+        "description": "登录到系统。",
         "operationId": "loginUser",
         "parameters": [
           {
             "name": "username",
             "in": "query",
-            "description": "The user name for login",
+            "description": "用于登录的用户名",
             "required": false,
             "schema": {
               "type": "string"
@@ -826,7 +826,7 @@
           {
             "name": "password",
             "in": "query",
-            "description": "The password for login in clear text",
+            "description": "用于登录的明文密码",
             "required": false,
             "schema": {
               "type": "string"
@@ -835,17 +835,17 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "headers": {
               "X-Rate-Limit": {
-                "description": "calls per hour allowed by the user",
+                "description": "用户每小时允许的调用次数",
                 "schema": {
                   "type": "integer",
                   "format": "int32"
                 }
               },
               "X-Expires-After": {
-                "description": "date in UTC when token expires",
+                "description": "Token 过期的 UTC 日期",
                 "schema": {
                   "type": "string",
                   "format": "date-time"
@@ -866,10 +866,10 @@
             }
           },
           "400": {
-            "description": "Invalid username/password supplied"
+            "description": "提供的用户名/密码无效"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         }
       }
@@ -879,16 +879,16 @@
         "tags": [
           "user"
         ],
-        "summary": "Logs out current logged in user session.",
-        "description": "Log user out of the system.",
+        "summary": "注销当前登录的用户会话。",
+        "description": "将用户登出系统。",
         "operationId": "logoutUser",
         "parameters": [],
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "操作成功"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         }
       }
@@ -898,14 +898,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Get user by user name.",
-        "description": "Get user detail based on username.",
+        "summary": "根据用户名获取用户。",
+        "description": "根据用户名获取用户详情。",
         "operationId": "getUserByName",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "The name that needs to be fetched. Use user1 for testing",
+            "description": "需要获取的用户名。使用 user1 进行测试",
             "required": true,
             "schema": {
               "type": "string"
@@ -914,7 +914,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作成功",
             "content": {
               "application/json": {
                 "schema": {
@@ -929,13 +929,13 @@
             }
           },
           "400": {
-            "description": "Invalid username supplied"
+            "description": "提供的用户名无效"
           },
           "404": {
-            "description": "User not found"
+            "description": "未找到用户"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         }
       },
@@ -943,14 +943,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Update user resource.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "更新用户资源。",
+        "description": "此操作只能由已登录的用户执行。",
         "operationId": "updateUser",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "name that need to be deleted",
+            "description": "需要删除的用户名",
             "required": true,
             "schema": {
               "type": "string"
@@ -958,7 +958,7 @@
           }
         ],
         "requestBody": {
-          "description": "Update an existent user in the store",
+          "description": "更新商店中已存在的用户",
           "content": {
             "application/json": {
               "schema": {
@@ -979,16 +979,16 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "操作成功"
           },
           "400": {
-            "description": "bad request"
+            "description": "错误请求"
           },
           "404": {
-            "description": "user not found"
+            "description": "未找到用户"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         }
       },
@@ -996,14 +996,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Delete user resource.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "删除用户资源。",
+        "description": "此操作只能由已登录的用户执行。",
         "operationId": "deleteUser",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "The name that needs to be deleted",
+            "description": "需要删除的用户名",
             "required": true,
             "schema": {
               "type": "string"
@@ -1012,16 +1012,16 @@
         ],
         "responses": {
           "200": {
-            "description": "User deleted"
+            "description": "用户已删除"
           },
           "400": {
-            "description": "Invalid username supplied"
+            "description": "提供的用户名无效"
           },
           "404": {
-            "description": "User not found"
+            "description": "未找到用户"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "非预期错误"
           }
         }
       }
@@ -1053,7 +1053,7 @@
           },
           "status": {
             "type": "string",
-            "description": "Order Status",
+            "description": "订单状态",
             "example": "approved",
             "enum": [
               "placed",
@@ -1120,7 +1120,7 @@
           },
           "userStatus": {
             "type": "integer",
-            "description": "User Status",
+            "description": "用户状态",
             "format": "int32",
             "example": 1
           }
@@ -1186,7 +1186,7 @@
           },
           "status": {
             "type": "string",
-            "description": "pet status in the store",
+            "description": "商店中的宠物状态",
             "enum": [
               "available",
               "pending",
@@ -1266,5 +1266,8 @@
         "in": "header"
       }
     }
+  },
+  "x-readme-ai-translation": {
+    "sourceHash": "9d6e66f97c6d9213"
   }
 }
