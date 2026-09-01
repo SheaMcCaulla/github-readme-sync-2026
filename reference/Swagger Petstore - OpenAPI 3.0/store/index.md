@@ -1,4 +1,5 @@
 ---
-title: negozio
-excerpt: Accesso agli ordini di Petstore
+title: store
+excerpt: Access to Petstore orders
+hidden: false
 ---

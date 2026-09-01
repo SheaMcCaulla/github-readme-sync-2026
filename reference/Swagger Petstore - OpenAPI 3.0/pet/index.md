@@ -1,4 +1,5 @@
 ---
-title: animale domestico
-excerpt: Tutto sui tuoi animali domestici
+title: pet
+excerpt: Everything about your Pets
+hidden: false
 ---
