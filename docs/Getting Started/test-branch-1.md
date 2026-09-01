@@ -1,7 +1,10 @@
 ---
-title: Test Branch 1
+title: Test 2
 deprecated: false
 hidden: false
+icon: 😃
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
