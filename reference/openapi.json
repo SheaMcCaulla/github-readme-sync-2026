@@ -2,7 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "Swagger Petstore - OpenAPI 3.0",
-    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSwagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!\nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.\nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\nSome useful links:\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+    "description": "Dies ist ein Beispiel-Petstore-Server basierend auf der OpenAPI 3.0-Spezifikation. Mehr über\nSwagger erfahren Sie unter [https://swagger.io](https://swagger.io). In der dritten Iteration des Petstores sind wir zum Design-First-Ansatz gewechselt!\nSie können uns jetzt helfen, die API zu verbessern, sei es durch Änderungen an der Definition selbst oder am Code.\nAuf diese Weise können wir die API im Laufe der Zeit allgemein verbessern und einige der neuen Funktionen in OAS3 bereitstellen.\n\nEinige nützliche Links:\n- [Das Petstore-Repository](https://github.com/swagger-api/swagger-petstore)\n- [Die Quell-API-Definition für den Petstore](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
     "termsOfService": "https://swagger.io/terms/",
     "contact": {
       "email": "apiteam@swagger.io"
@@ -14,7 +14,7 @@
     "version": "1.0.27"
   },
   "externalDocs": {
-    "description": "Find out more about Swagger",
+    "description": "Erfahren Sie mehr über Swagger",
     "url": "https://swagger.io"
   },
   "servers": [
@@ -25,23 +25,23 @@
   "tags": [
     {
       "name": "pet",
-      "description": "Everything about your Pets",
+      "description": "Alles über Ihre Haustiere",
       "externalDocs": {
-        "description": "Find out more",
+        "description": "Erfahren Sie mehr",
         "url": "https://swagger.io"
       }
     },
     {
       "name": "store",
-      "description": "Access to Petstore orders",
+      "description": "Zugriff auf Petstore-Bestellungen",
       "externalDocs": {
-        "description": "Find out more about our store",
+        "description": "Erfahren Sie mehr über unseren Shop",
         "url": "https://swagger.io"
       }
     },
     {
       "name": "user",
-      "description": "Operations about user"
+      "description": "Operationen bezüglich Benutzern"
     }
   ],
   "paths": {
@@ -50,11 +50,11 @@
         "tags": [
           "pet"
         ],
-        "summary": "Update an existing pet.",
-        "description": "Update an existing pet by Id.",
+        "summary": "Ein vorhandenes Haustier aktualisieren.",
+        "description": "Ein vorhandenes Haustier nach ID aktualisieren.",
         "operationId": "updatePet",
         "requestBody": {
-          "description": "Update an existent pet in the store",
+          "description": "Ein vorhandenes Haustier im Shop aktualisieren",
           "content": {
             "application/json": {
               "schema": {
@@ -76,7 +76,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Erfolgreiche Operation",
             "content": {
               "application/json": {
                 "schema": {
@@ -91,16 +91,16 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "Ungültige ID angegeben"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "Haustier nicht gefunden"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "Validierungsfehler"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         },
         "security": [
@@ -116,11 +116,11 @@
         "tags": [
           "pet"
         ],
-        "summary": "Add a new pet to the store.",
-        "description": "Add a new pet to the store.",
+        "summary": "Ein neues Haustier zum Shop hinzufügen.",
+        "description": "Ein neues Haustier zum Shop hinzufügen.",
         "operationId": "addPet",
         "requestBody": {
-          "description": "Create a new pet in the store",
+          "description": "Ein neues Haustier im Shop erstellen",
           "content": {
             "application/json": {
               "schema": {
@@ -142,7 +142,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Erfolgreiche Operation",
             "content": {
               "application/json": {
                 "schema": {
@@ -157,13 +157,13 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "Ungültige Eingabe"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "Validierungsfehler"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         },
         "security": [
@@ -181,14 +181,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Finds Pets by status.",
-        "description": "Multiple status values can be provided with comma separated strings.",
+        "summary": "Sucht Haustiere nach Status.",
+        "description": "Mehrere Statuswerte können als kommagetrennte Zeichenketten angegeben werden.",
         "operationId": "findPetsByStatus",
         "parameters": [
           {
             "name": "status",
             "in": "query",
-            "description": "Status values that need to be considered for filter",
+            "description": "Statuswerte, die für den Filter berücksichtigt werden müssen",
             "required": true,
             "explode": true,
             "schema": {
@@ -204,7 +204,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "erfolgreiche Operation",
             "content": {
               "application/json": {
                 "schema": {
@@ -225,10 +225,10 @@
             }
           },
           "400": {
-            "description": "Invalid status value"
+            "description": "Ungültiger Statuswert"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         },
         "security": [
@@ -246,14 +246,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Finds Pets by tags.",
-        "description": "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.",
+        "summary": "Sucht Haustiere nach Tags.",
+        "description": "Mehrere Tags können als kommagetrennte Zeichenketten angegeben werden. Verwenden Sie tag1, tag2, tag3 zum Testen.",
         "operationId": "findPetsByTags",
         "parameters": [
           {
             "name": "tags",
             "in": "query",
-            "description": "Tags to filter by",
+            "description": "Tags, nach denen gefiltert werden soll",
             "required": true,
             "explode": true,
             "schema": {
@@ -266,7 +266,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "erfolgreiche Operation",
             "content": {
               "application/json": {
                 "schema": {
@@ -287,10 +287,10 @@
             }
           },
           "400": {
-            "description": "Invalid tag value"
+            "description": "Ungültiger Tag-Wert"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         },
         "security": [
@@ -308,14 +308,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Find pet by ID.",
-        "description": "Returns a single pet.",
+        "summary": "Haustier nach ID suchen.",
+        "description": "Gibt ein einzelnes Haustier zurück.",
         "operationId": "getPetById",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet to return",
+            "description": "ID des zurückzugebenden Haustiers",
             "required": true,
             "schema": {
               "type": "integer",
@@ -325,7 +325,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "erfolgreiche Operation",
             "content": {
               "application/json": {
                 "schema": {
@@ -340,13 +340,13 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "Ungültige ID angegeben"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "Haustier nicht gefunden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         },
         "security": [
@@ -365,14 +365,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Updates a pet in the store with form data.",
-        "description": "Updates a pet resource based on the form data.",
+        "summary": "Aktualisiert ein Haustier im Shop mit Formulardaten.",
+        "description": "Aktualisiert eine Haustier-Ressource basierend auf den Formulardaten.",
         "operationId": "updatePetWithForm",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet that needs to be updated",
+            "description": "ID des Haustiers, das aktualisiert werden muss",
             "required": true,
             "schema": {
               "type": "integer",
@@ -382,7 +382,7 @@
           {
             "name": "name",
             "in": "query",
-            "description": "Name of pet that needs to be updated",
+            "description": "Name des Haustiers, das aktualisiert werden muss",
             "schema": {
               "type": "string"
             }
@@ -390,7 +390,7 @@
           {
             "name": "status",
             "in": "query",
-            "description": "Status of pet that needs to be updated",
+            "description": "Status des Haustiers, das aktualisiert werden muss",
             "schema": {
               "type": "string"
             }
@@ -398,7 +398,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "erfolgreiche Operation",
             "content": {
               "application/json": {
                 "schema": {
@@ -413,10 +413,10 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "Ungültige Eingabe"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         },
         "security": [
@@ -432,8 +432,8 @@
         "tags": [
           "pet"
         ],
-        "summary": "Deletes a pet.",
-        "description": "Delete a pet.",
+        "summary": "Löscht ein Haustier.",
+        "description": "Löscht ein Haustier.",
         "operationId": "deletePet",
         "parameters": [
           {
@@ -448,7 +448,7 @@
           {
             "name": "petId",
             "in": "path",
-            "description": "Pet id to delete",
+            "description": "ID des zu löschenden Haustiers",
             "required": true,
             "schema": {
               "type": "integer",
@@ -458,13 +458,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Pet deleted"
+            "description": "Haustier gelöscht"
           },
           "400": {
-            "description": "Invalid pet value"
+            "description": "Ungültiger Haustier-Wert"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         },
         "security": [
@@ -482,14 +482,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Uploads an image.",
-        "description": "Upload image of the pet.",
+        "summary": "Lädt ein Bild hoch.",
+        "description": "Bild des Haustiers hochladen.",
         "operationId": "uploadFile",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet to update",
+            "description": "ID des zu aktualisierenden Haustiers",
             "required": true,
             "schema": {
               "type": "integer",
@@ -499,7 +499,7 @@
           {
             "name": "additionalMetadata",
             "in": "query",
-            "description": "Additional Metadata",
+            "description": "Zusätzliche Metadaten",
             "required": false,
             "schema": {
               "type": "string"
@@ -518,7 +518,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Erfolgreicher Vorgang",
             "content": {
               "application/json": {
                 "schema": {
@@ -528,13 +528,13 @@
             }
           },
           "400": {
-            "description": "No file uploaded"
+            "description": "Keine Datei hochgeladen"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "Haustier nicht gefunden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         },
         "security": [
@@ -552,12 +552,12 @@
         "tags": [
           "store"
         ],
-        "summary": "Returns pet inventories by status.",
-        "description": "Returns a map of status codes to quantities.",
+        "summary": "Gibt Haustierbestände nach Status zurück.",
+        "description": "Gibt eine Zuordnung von Statuscodes zu Mengen zurück.",
         "operationId": "getInventory",
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Erfolgreicher Vorgang",
             "content": {
               "application/json": {
                 "schema": {
@@ -571,7 +571,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         },
         "security": [
@@ -586,8 +586,8 @@
         "tags": [
           "store"
         ],
-        "summary": "Place an order for a pet.",
-        "description": "Place a new order in the store.",
+        "summary": "Bestellung für ein Haustier aufgeben.",
+        "description": "Eine neue Bestellung im Shop aufgeben.",
         "operationId": "placeOrder",
         "requestBody": {
           "content": {
@@ -610,7 +610,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Erfolgreicher Vorgang",
             "content": {
               "application/json": {
                 "schema": {
@@ -620,13 +620,13 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "Ungültige Eingabe"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "Validierungsausnahme"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         }
       }
@@ -636,14 +636,14 @@
         "tags": [
           "store"
         ],
-        "summary": "Find purchase order by ID.",
-        "description": "For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions.",
+        "summary": "Bestellung nach ID suchen.",
+        "description": "Für eine gültige Antwort versuchen Sie Ganzzahl-IDs mit einem Wert von <= 5 oder > 10. Andere Werte erzeugen Ausnahmen.",
         "operationId": "getOrderById",
         "parameters": [
           {
             "name": "orderId",
             "in": "path",
-            "description": "ID of order that needs to be fetched",
+            "description": "ID der abzurufenden Bestellung",
             "required": true,
             "schema": {
               "type": "integer",
@@ -653,7 +653,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Erfolgreicher Vorgang",
             "content": {
               "application/json": {
                 "schema": {
@@ -668,13 +668,13 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "Ungültige ID angegeben"
           },
           "404": {
-            "description": "Order not found"
+            "description": "Bestellung nicht gefunden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         }
       },
@@ -682,14 +682,14 @@
         "tags": [
           "store"
         ],
-        "summary": "Delete purchase order by identifier.",
-        "description": "For valid response try integer IDs with value < 1000. Anything above 1000 or non-integers will generate API errors.",
+        "summary": "Bestellung anhand der Kennung löschen.",
+        "description": "Für eine gültige Antwort versuchen Sie Ganzzahl-IDs mit einem Wert < 1000. Werte über 1000 oder Nicht-Ganzzahlen erzeugen API-Fehler.",
         "operationId": "deleteOrder",
         "parameters": [
           {
             "name": "orderId",
             "in": "path",
-            "description": "ID of the order that needs to be deleted",
+            "description": "ID der zu löschenden Bestellung",
             "required": true,
             "schema": {
               "type": "integer",
@@ -699,16 +699,16 @@
         ],
         "responses": {
           "200": {
-            "description": "order deleted"
+            "description": "Bestellung gelöscht"
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "Ungültige ID angegeben"
           },
           "404": {
-            "description": "Order not found"
+            "description": "Bestellung nicht gefunden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         }
       }
@@ -718,11 +718,11 @@
         "tags": [
           "user"
         ],
-        "summary": "Create user.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "Benutzer erstellen.",
+        "description": "Dies kann nur vom angemeldeten Benutzer durchgeführt werden.",
         "operationId": "createUser",
         "requestBody": {
-          "description": "Created user object",
+          "description": "Erstelltes Benutzerobjekt",
           "content": {
             "application/json": {
               "schema": {
@@ -743,7 +743,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Erfolgreicher Vorgang",
             "content": {
               "application/json": {
                 "schema": {
@@ -758,7 +758,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         }
       }
@@ -768,8 +768,8 @@
         "tags": [
           "user"
         ],
-        "summary": "Creates list of users with given input array.",
-        "description": "Creates list of users with given input array.",
+        "summary": "Erstellt eine Liste von Benutzern mit dem angegebenen Eingabearray.",
+        "description": "Erstellt eine Liste von Benutzern mit dem angegebenen Eingabearray.",
         "operationId": "createUsersWithListInput",
         "requestBody": {
           "content": {
@@ -785,7 +785,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Erfolgreicher Vorgang",
             "content": {
               "application/json": {
                 "schema": {
@@ -800,7 +800,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         }
       }
@@ -810,14 +810,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Logs user into the system.",
-        "description": "Log into the system.",
+        "summary": "Meldet den Benutzer im System an.",
+        "description": "Im System anmelden.",
         "operationId": "loginUser",
         "parameters": [
           {
             "name": "username",
             "in": "query",
-            "description": "The user name for login",
+            "description": "Der Benutzername für die Anmeldung",
             "required": false,
             "schema": {
               "type": "string"
@@ -826,7 +826,7 @@
           {
             "name": "password",
             "in": "query",
-            "description": "The password for login in clear text",
+            "description": "Das Passwort für die Anmeldung im Klartext",
             "required": false,
             "schema": {
               "type": "string"
@@ -835,17 +835,17 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Erfolgreicher Vorgang",
             "headers": {
               "X-Rate-Limit": {
-                "description": "calls per hour allowed by the user",
+                "description": "Vom Benutzer erlaubte Aufrufe pro Stunde",
                 "schema": {
                   "type": "integer",
                   "format": "int32"
                 }
               },
               "X-Expires-After": {
-                "description": "date in UTC when token expires",
+                "description": "Datum in UTC, an dem das Token abläuft",
                 "schema": {
                   "type": "string",
                   "format": "date-time"
@@ -866,10 +866,10 @@
             }
           },
           "400": {
-            "description": "Invalid username/password supplied"
+            "description": "Ungültiger Benutzername/Passwort angegeben"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         }
       }
@@ -879,16 +879,16 @@
         "tags": [
           "user"
         ],
-        "summary": "Logs out current logged in user session.",
-        "description": "Log user out of the system.",
+        "summary": "Meldet die aktuell angemeldete Benutzersitzung ab.",
+        "description": "Benutzer aus dem System abmelden.",
         "operationId": "logoutUser",
         "parameters": [],
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "Erfolgreicher Vorgang"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         }
       }
@@ -898,14 +898,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Get user by user name.",
-        "description": "Get user detail based on username.",
+        "summary": "Benutzer nach Benutzernamen abrufen.",
+        "description": "Benutzerdetails basierend auf dem Benutzernamen abrufen.",
         "operationId": "getUserByName",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "The name that needs to be fetched. Use user1 for testing",
+            "description": "Der abzurufende Name. Verwenden Sie user1 zum Testen",
             "required": true,
             "schema": {
               "type": "string"
@@ -914,7 +914,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Erfolgreicher Vorgang",
             "content": {
               "application/json": {
                 "schema": {
@@ -929,13 +929,13 @@
             }
           },
           "400": {
-            "description": "Invalid username supplied"
+            "description": "Ungültiger Benutzername angegeben"
           },
           "404": {
-            "description": "User not found"
+            "description": "Benutzer nicht gefunden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         }
       },
@@ -943,14 +943,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Update user resource.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "Benutzerressource aktualisieren.",
+        "description": "Dies kann nur vom angemeldeten Benutzer durchgeführt werden.",
         "operationId": "updateUser",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "name that need to be deleted",
+            "description": "Name, der gelöscht werden muss",
             "required": true,
             "schema": {
               "type": "string"
@@ -958,7 +958,7 @@
           }
         ],
         "requestBody": {
-          "description": "Update an existent user in the store",
+          "description": "Einen existierenden Benutzer im Store aktualisieren",
           "content": {
             "application/json": {
               "schema": {
@@ -979,16 +979,16 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "Erfolgreicher Vorgang"
           },
           "400": {
-            "description": "bad request"
+            "description": "Ungültige Anfrage"
           },
           "404": {
-            "description": "user not found"
+            "description": "Benutzer nicht gefunden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         }
       },
@@ -996,14 +996,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Delete user resource.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "Benutzerressource löschen.",
+        "description": "Dies kann nur vom angemeldeten Benutzer durchgeführt werden.",
         "operationId": "deleteUser",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "The name that needs to be deleted",
+            "description": "Der Name, der gelöscht werden muss",
             "required": true,
             "schema": {
               "type": "string"
@@ -1012,16 +1012,16 @@
         ],
         "responses": {
           "200": {
-            "description": "User deleted"
+            "description": "Benutzer gelöscht"
           },
           "400": {
-            "description": "Invalid username supplied"
+            "description": "Ungültiger Benutzername angegeben"
           },
           "404": {
-            "description": "User not found"
+            "description": "Benutzer nicht gefunden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Unerwarteter Fehler"
           }
         }
       }
@@ -1053,7 +1053,7 @@
           },
           "status": {
             "type": "string",
-            "description": "Order Status",
+            "description": "Bestellstatus",
             "example": "approved",
             "enum": [
               "placed",
@@ -1120,7 +1120,7 @@
           },
           "userStatus": {
             "type": "integer",
-            "description": "User Status",
+            "description": "Benutzerstatus",
             "format": "int32",
             "example": 1
           }
@@ -1186,7 +1186,7 @@
           },
           "status": {
             "type": "string",
-            "description": "pet status in the store",
+            "description": "Haustierstatus im Store",
             "enum": [
               "available",
               "pending",
@@ -1266,5 +1266,8 @@
         "in": "header"
       }
     }
+  },
+  "x-readme-ai-translation": {
+    "sourceHash": "9d6e66f97c6d9213"
   }
 }
