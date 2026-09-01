@@ -1,4 +1,5 @@
 ---
-title: 用户
-excerpt: 关于用户的操作
+title: user
+excerpt: Operations about user
+hidden: false
 ---

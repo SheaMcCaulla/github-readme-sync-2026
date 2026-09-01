@@ -1,4 +1,5 @@
 ---
-title: 商店
-excerpt: 访问 Petstore 订单
+title: store
+excerpt: Access to Petstore orders
+hidden: false
 ---
