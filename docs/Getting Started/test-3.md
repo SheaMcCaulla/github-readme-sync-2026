@@ -1,21 +1,21 @@
 ---
-title: Test 3
+title: Getting Started with Acme
 deprecated: false
 hidden: false
 icon: 😁
 metadata:
   robots: index
 ---
-<Accordion title="" icon="fa-info-circle">
-  Accordion Test
+<Accordion title="Common Errors" icon="fa-info-circle">
+
 </Accordion>
 
 <Cards>
-  <Card title="Card One" icon="fa-rocket">
-    Card Test
+  <Card title="5 Minute Setup" icon="fa-rocket">
+
   </Card>
 
-  <Card title="Card Two" icon="fa-code">
+  <Card title="API Quick Start" icon="fa-code">
 
   </Card>
 
@@ -25,8 +25,8 @@ metadata:
 </Cards>
 
 ```mermaid
-flowchart LR 
- A --- B[fa:fa-spinner B] 
- B --> C[fa:fa-check C] 
- B --> D[fa:fa-ban D]
+flowchart LR
+  A[Request] --> B[Auth Check]
+  B -->|Valid| C[200 Response]
+  B -->|Invalid| D[401 Error]
 ```
