@@ -30,3 +30,12 @@ flowchart LR
   B -->|Valid| C[200 Response]
   B -->|Invalid| D[401 Error]
 ```
+
+<Banner
+  isInline={true}
+  message="This banner is displayed inline. Set isInline to false to move it seamlessly into your page's header!"
+  color="#118cfd"
+  textColor="#ffffff"
+  fontSize="14px"
+  fontWeight="bold"
+ />
