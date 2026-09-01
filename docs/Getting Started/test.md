@@ -33,8 +33,6 @@ metadata:
     <Embed title="" typeOfEmbed="github" url="" />
 
     <Embed title="" typeOfEmbed="iframe" url="https://readme.com/pricing" />
-
-
   </Tab>
 
   <Tab title="名前変更">
@@ -120,5 +118,3 @@ metadata:
 <br />
 
 <Embed title="" typeOfEmbed="youtube" url="" />
-
-<br />
