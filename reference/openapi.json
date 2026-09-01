@@ -2,7 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "Swagger Petstore - OpenAPI 3.0",
-    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSwagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!\nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.\nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\nSome useful links:\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+    "description": "これはOpenAPI 3.0仕様に基づいたペットストアサーバーのサンプルです。Swaggerの詳細については、[https://swagger.io](https://swagger.io)をご覧ください。ペットストアの3回目のイテレーションでは、デザインファーストのアプローチに切り替えました！\n定義自体またはコードに変更を加えることで、APIの改善にご協力いただけます。\nそうすることで、時間の経過とともにAPI全体を改善し、OAS3のいくつかの新機能を公開することができます。\n\n便利なリンク：\n- [ペットストアのリポジトリ](https://github.com/swagger-api/swagger-petstore)\n- [ペットストアのソースAPI定義](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
     "termsOfService": "https://swagger.io/terms/",
     "contact": {
       "email": "apiteam@swagger.io"
@@ -14,7 +14,7 @@
     "version": "1.0.27"
   },
   "externalDocs": {
-    "description": "Find out more about Swagger",
+    "description": "Swaggerの詳細はこちら",
     "url": "https://swagger.io"
   },
   "servers": [
@@ -25,23 +25,23 @@
   "tags": [
     {
       "name": "pet",
-      "description": "Everything about your Pets",
+      "description": "ペットに関するすべての情報",
       "externalDocs": {
-        "description": "Find out more",
+        "description": "詳細はこちら",
         "url": "https://swagger.io"
       }
     },
     {
       "name": "store",
-      "description": "Access to Petstore orders",
+      "description": "ペットストアの注文へのアクセス",
       "externalDocs": {
-        "description": "Find out more about our store",
+        "description": "当ストアの詳細はこちら",
         "url": "https://swagger.io"
       }
     },
     {
       "name": "user",
-      "description": "Operations about user"
+      "description": "ユーザーに関する操作"
     }
   ],
   "paths": {
@@ -50,11 +50,11 @@
         "tags": [
           "pet"
         ],
-        "summary": "Update an existing pet.",
-        "description": "Update an existing pet by Id.",
+        "summary": "既存のペットを更新します。",
+        "description": "IDで既存のペットを更新します。",
         "operationId": "updatePet",
         "requestBody": {
-          "description": "Update an existent pet in the store",
+          "description": "ストア内の既存のペットを更新する",
           "content": {
             "application/json": {
               "schema": {
@@ -76,7 +76,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "操作に成功しました",
             "content": {
               "application/json": {
                 "schema": {
@@ -91,16 +91,16 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "無効なIDが指定されました"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "ペットが見つかりません"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "バリデーション例外"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         },
         "security": [
@@ -116,11 +116,11 @@
         "tags": [
           "pet"
         ],
-        "summary": "Add a new pet to the store.",
-        "description": "Add a new pet to the store.",
+        "summary": "ストアに新しいペットを追加します。",
+        "description": "ストアに新しいペットを追加します。",
         "operationId": "addPet",
         "requestBody": {
-          "description": "Create a new pet in the store",
+          "description": "ストアに新しいペットを作成する",
           "content": {
             "application/json": {
               "schema": {
@@ -142,7 +142,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "操作に成功しました",
             "content": {
               "application/json": {
                 "schema": {
@@ -157,13 +157,13 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "無効な入力"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "バリデーション例外"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         },
         "security": [
@@ -181,14 +181,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Finds Pets by status.",
-        "description": "Multiple status values can be provided with comma separated strings.",
+        "summary": "ステータスでペットを検索します。",
+        "description": "カンマ区切りの文字列で複数のステータス値を指定できます。",
         "operationId": "findPetsByStatus",
         "parameters": [
           {
             "name": "status",
             "in": "query",
-            "description": "Status values that need to be considered for filter",
+            "description": "フィルターで考慮する必要があるステータス値",
             "required": true,
             "explode": true,
             "schema": {
@@ -204,7 +204,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作に成功しました",
             "content": {
               "application/json": {
                 "schema": {
@@ -225,10 +225,10 @@
             }
           },
           "400": {
-            "description": "Invalid status value"
+            "description": "無効なステータス値"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         },
         "security": [
@@ -246,14 +246,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Finds Pets by tags.",
-        "description": "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.",
+        "summary": "タグでペットを検索します。",
+        "description": "カンマ区切りの文字列で複数のタグを指定できます。テストには tag1、tag2、tag3 を使用してください。",
         "operationId": "findPetsByTags",
         "parameters": [
           {
             "name": "tags",
             "in": "query",
-            "description": "Tags to filter by",
+            "description": "フィルターに使用するタグ",
             "required": true,
             "explode": true,
             "schema": {
@@ -266,7 +266,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作に成功しました",
             "content": {
               "application/json": {
                 "schema": {
@@ -287,10 +287,10 @@
             }
           },
           "400": {
-            "description": "Invalid tag value"
+            "description": "無効なタグ値"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         },
         "security": [
@@ -308,14 +308,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Find pet by ID.",
-        "description": "Returns a single pet.",
+        "summary": "IDでペットを検索します。",
+        "description": "1匹のペットを返します。",
         "operationId": "getPetById",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet to return",
+            "description": "返却するペットのID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -325,7 +325,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作に成功しました",
             "content": {
               "application/json": {
                 "schema": {
@@ -340,13 +340,13 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "無効なIDが指定されました"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "ペットが見つかりません"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         },
         "security": [
@@ -365,14 +365,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Updates a pet in the store with form data.",
-        "description": "Updates a pet resource based on the form data.",
+        "summary": "フォームデータを使用してストア内のペットを更新します。",
+        "description": "フォームデータに基づいてペットのリソースを更新します。",
         "operationId": "updatePetWithForm",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet that needs to be updated",
+            "description": "更新が必要なペットのID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -382,7 +382,7 @@
           {
             "name": "name",
             "in": "query",
-            "description": "Name of pet that needs to be updated",
+            "description": "更新が必要なペットの名前",
             "schema": {
               "type": "string"
             }
@@ -390,7 +390,7 @@
           {
             "name": "status",
             "in": "query",
-            "description": "Status of pet that needs to be updated",
+            "description": "更新が必要なペットのステータス",
             "schema": {
               "type": "string"
             }
@@ -398,7 +398,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作に成功しました",
             "content": {
               "application/json": {
                 "schema": {
@@ -413,10 +413,10 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "無効な入力"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         },
         "security": [
@@ -432,8 +432,8 @@
         "tags": [
           "pet"
         ],
-        "summary": "Deletes a pet.",
-        "description": "Delete a pet.",
+        "summary": "ペットを削除します。",
+        "description": "ペットを削除します。",
         "operationId": "deletePet",
         "parameters": [
           {
@@ -448,7 +448,7 @@
           {
             "name": "petId",
             "in": "path",
-            "description": "Pet id to delete",
+            "description": "削除するペットのID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -458,13 +458,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Pet deleted"
+            "description": "ペットが削除されました"
           },
           "400": {
-            "description": "Invalid pet value"
+            "description": "無効なペットの値"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         },
         "security": [
@@ -482,14 +482,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Uploads an image.",
-        "description": "Upload image of the pet.",
+        "summary": "画像をアップロードします。",
+        "description": "ペットの画像をアップロードします。",
         "operationId": "uploadFile",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet to update",
+            "description": "更新するペットのID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -499,7 +499,7 @@
           {
             "name": "additionalMetadata",
             "in": "query",
-            "description": "Additional Metadata",
+            "description": "追加のメタデータ",
             "required": false,
             "schema": {
               "type": "string"
@@ -518,7 +518,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "成功した操作",
             "content": {
               "application/json": {
                 "schema": {
@@ -528,13 +528,13 @@
             }
           },
           "400": {
-            "description": "No file uploaded"
+            "description": "ファイルがアップロードされていません"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "ペットが見つかりません"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         },
         "security": [
@@ -552,12 +552,12 @@
         "tags": [
           "store"
         ],
-        "summary": "Returns pet inventories by status.",
-        "description": "Returns a map of status codes to quantities.",
+        "summary": "ステータスごとのペットの在庫を返します。",
+        "description": "ステータスコードから数量へのマップを返します。",
         "operationId": "getInventory",
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "成功した操作",
             "content": {
               "application/json": {
                 "schema": {
@@ -571,7 +571,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         },
         "security": [
@@ -586,8 +586,8 @@
         "tags": [
           "store"
         ],
-        "summary": "Place an order for a pet.",
-        "description": "Place a new order in the store.",
+        "summary": "ペットの注文を行います。",
+        "description": "ストアで新しい注文を行います。",
         "operationId": "placeOrder",
         "requestBody": {
           "content": {
@@ -610,7 +610,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "成功した操作",
             "content": {
               "application/json": {
                 "schema": {
@@ -620,13 +620,13 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "無効な入力"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "バリデーション例外"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         }
       }
@@ -636,14 +636,14 @@
         "tags": [
           "store"
         ],
-        "summary": "Find purchase order by ID.",
-        "description": "For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions.",
+        "summary": "IDで注文を検索します。",
+        "description": "有効なレスポンスを取得するには、値が5以下または10より大きい整数のIDを試してください。その他の値は例外を生成します。",
         "operationId": "getOrderById",
         "parameters": [
           {
             "name": "orderId",
             "in": "path",
-            "description": "ID of order that needs to be fetched",
+            "description": "取得する必要がある注文のID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -653,7 +653,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "成功した操作",
             "content": {
               "application/json": {
                 "schema": {
@@ -668,13 +668,13 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "無効なIDが提供されました"
           },
           "404": {
-            "description": "Order not found"
+            "description": "注文が見つかりません"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         }
       },
@@ -682,14 +682,14 @@
         "tags": [
           "store"
         ],
-        "summary": "Delete purchase order by identifier.",
-        "description": "For valid response try integer IDs with value < 1000. Anything above 1000 or non-integers will generate API errors.",
+        "summary": "識別子で注文を削除します。",
+        "description": "有効なレスポンスを取得するには、値が1000未満の整数のIDを試してください。1000を超える値や整数以外はAPIエラーを生成します。",
         "operationId": "deleteOrder",
         "parameters": [
           {
             "name": "orderId",
             "in": "path",
-            "description": "ID of the order that needs to be deleted",
+            "description": "削除する必要がある注文のID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -699,16 +699,16 @@
         ],
         "responses": {
           "200": {
-            "description": "order deleted"
+            "description": "注文が削除されました"
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "無効なIDが提供されました"
           },
           "404": {
-            "description": "Order not found"
+            "description": "注文が見つかりません"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         }
       }
@@ -718,11 +718,11 @@
         "tags": [
           "user"
         ],
-        "summary": "Create user.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "ユーザーを作成します。",
+        "description": "これはログインしているユーザーのみが実行できます。",
         "operationId": "createUser",
         "requestBody": {
-          "description": "Created user object",
+          "description": "作成されたユーザーオブジェクト",
           "content": {
             "application/json": {
               "schema": {
@@ -743,7 +743,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "成功した操作",
             "content": {
               "application/json": {
                 "schema": {
@@ -758,7 +758,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         }
       }
@@ -768,8 +768,8 @@
         "tags": [
           "user"
         ],
-        "summary": "Creates list of users with given input array.",
-        "description": "Creates list of users with given input array.",
+        "summary": "指定された入力配列でユーザーのリストを作成します。",
+        "description": "指定された入力配列でユーザーのリストを作成します。",
         "operationId": "createUsersWithListInput",
         "requestBody": {
           "content": {
@@ -785,7 +785,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "成功した操作",
             "content": {
               "application/json": {
                 "schema": {
@@ -800,7 +800,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         }
       }
@@ -810,14 +810,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Logs user into the system.",
-        "description": "Log into the system.",
+        "summary": "ユーザーをシステムにログインさせます。",
+        "description": "システムにログインします。",
         "operationId": "loginUser",
         "parameters": [
           {
             "name": "username",
             "in": "query",
-            "description": "The user name for login",
+            "description": "ログイン用のユーザー名",
             "required": false,
             "schema": {
               "type": "string"
@@ -826,7 +826,7 @@
           {
             "name": "password",
             "in": "query",
-            "description": "The password for login in clear text",
+            "description": "平文のログイン用パスワード",
             "required": false,
             "schema": {
               "type": "string"
@@ -835,17 +835,17 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作に成功しました",
             "headers": {
               "X-Rate-Limit": {
-                "description": "calls per hour allowed by the user",
+                "description": "ユーザーに許可されている1時間あたりの呼び出し回数",
                 "schema": {
                   "type": "integer",
                   "format": "int32"
                 }
               },
               "X-Expires-After": {
-                "description": "date in UTC when token expires",
+                "description": "トークンが期限切れになるUTC日時",
                 "schema": {
                   "type": "string",
                   "format": "date-time"
@@ -866,10 +866,10 @@
             }
           },
           "400": {
-            "description": "Invalid username/password supplied"
+            "description": "無効なユーザー名またはパスワードが指定されました"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         }
       }
@@ -879,16 +879,16 @@
         "tags": [
           "user"
         ],
-        "summary": "Logs out current logged in user session.",
-        "description": "Log user out of the system.",
+        "summary": "現在ログインしているユーザーのセッションをログアウトします。",
+        "description": "ユーザーをシステムからログアウトします。",
         "operationId": "logoutUser",
         "parameters": [],
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "操作に成功しました"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         }
       }
@@ -898,14 +898,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Get user by user name.",
-        "description": "Get user detail based on username.",
+        "summary": "ユーザー名でユーザーを取得します。",
+        "description": "ユーザー名に基づいてユーザーの詳細を取得します。",
         "operationId": "getUserByName",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "The name that needs to be fetched. Use user1 for testing",
+            "description": "取得する名前。テストには user1 を使用してください",
             "required": true,
             "schema": {
               "type": "string"
@@ -914,7 +914,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "操作に成功しました",
             "content": {
               "application/json": {
                 "schema": {
@@ -929,13 +929,13 @@
             }
           },
           "400": {
-            "description": "Invalid username supplied"
+            "description": "無効なユーザー名が指定されました"
           },
           "404": {
-            "description": "User not found"
+            "description": "ユーザーが見つかりません"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         }
       },
@@ -943,14 +943,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Update user resource.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "ユーザーリソースを更新します。",
+        "description": "これはログインしているユーザーのみが実行できます。",
         "operationId": "updateUser",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "name that need to be deleted",
+            "description": "削除する必要がある名前",
             "required": true,
             "schema": {
               "type": "string"
@@ -958,7 +958,7 @@
           }
         ],
         "requestBody": {
-          "description": "Update an existent user in the store",
+          "description": "ストア内の既存のユーザーを更新します",
           "content": {
             "application/json": {
               "schema": {
@@ -979,16 +979,16 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "操作に成功しました"
           },
           "400": {
-            "description": "bad request"
+            "description": "不正なリクエスト"
           },
           "404": {
-            "description": "user not found"
+            "description": "ユーザーが見つかりません"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         }
       },
@@ -996,14 +996,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Delete user resource.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "ユーザーリソースを削除します。",
+        "description": "これはログインしているユーザーのみが実行できます。",
         "operationId": "deleteUser",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "The name that needs to be deleted",
+            "description": "削除する必要がある名前",
             "required": true,
             "schema": {
               "type": "string"
@@ -1012,16 +1012,16 @@
         ],
         "responses": {
           "200": {
-            "description": "User deleted"
+            "description": "ユーザーが削除されました"
           },
           "400": {
-            "description": "Invalid username supplied"
+            "description": "無効なユーザー名が指定されました"
           },
           "404": {
-            "description": "User not found"
+            "description": "ユーザーが見つかりません"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "予期しないエラー"
           }
         }
       }
@@ -1053,7 +1053,7 @@
           },
           "status": {
             "type": "string",
-            "description": "Order Status",
+            "description": "注文ステータス",
             "example": "approved",
             "enum": [
               "placed",
@@ -1120,7 +1120,7 @@
           },
           "userStatus": {
             "type": "integer",
-            "description": "User Status",
+            "description": "ユーザーステータス",
             "format": "int32",
             "example": 1
           }
@@ -1186,7 +1186,7 @@
           },
           "status": {
             "type": "string",
-            "description": "pet status in the store",
+            "description": "ストアでのペットのステータス",
             "enum": [
               "available",
               "pending",
@@ -1266,5 +1266,8 @@
         "in": "header"
       }
     }
+  },
+  "x-readme-ai-translation": {
+    "sourceHash": "9d6e66f97c6d9213"
   }
 }
