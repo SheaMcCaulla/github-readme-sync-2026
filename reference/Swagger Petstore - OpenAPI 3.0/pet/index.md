@@ -1,4 +1,5 @@
 ---
-title: huisdier
-excerpt: Alles over je huisdieren
+title: pet
+excerpt: Everything about your Pets
+hidden: false
 ---

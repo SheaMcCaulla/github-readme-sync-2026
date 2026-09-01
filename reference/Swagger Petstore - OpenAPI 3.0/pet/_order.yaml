@@ -3,3 +3,11 @@
 - deletepet
 - addpet
 - findpetsbystatus
+- updatepet
+- addpet-1
+- findpetsbystatus-1
+- findpetsbytags
+- getpetbyid
+- updatepetwithform-1
+- deletepet-1
+- uploadfile-1
