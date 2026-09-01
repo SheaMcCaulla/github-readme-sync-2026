@@ -1,4 +1,5 @@
 ---
-title: Haustiere
-excerpt: Alles über deine Haustiere
+title: pet
+excerpt: Everything about your Pets
+hidden: false
 ---
