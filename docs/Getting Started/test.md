@@ -2,7 +2,9 @@
 title: Test
 deprecated: false
 hidden: false
-icon: 💀
+icon: 🙂
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
@@ -33,8 +35,6 @@ metadata:
     <Embed title="" typeOfEmbed="github" url="" />
 
     <Embed title="" typeOfEmbed="iframe" url="https://readme.com/pricing" />
-
-
   </Tab>
 
   <Tab title="Rename">
@@ -120,5 +120,3 @@ metadata:
 <br />
 
 <Embed title="" typeOfEmbed="youtube" url="" />
-
-<br />
