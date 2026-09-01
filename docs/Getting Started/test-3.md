@@ -12,11 +12,11 @@ metadata:
 
 <Cards>
   <Card title="5 Minute Setup" icon="fa-rocket">
-
+    From API key to first request
   </Card>
 
   <Card title="API Quick Start" icon="fa-code">
-
+    Request your API key from our team
   </Card>
 
   <Card title="Card Three" icon="fa-comments">
