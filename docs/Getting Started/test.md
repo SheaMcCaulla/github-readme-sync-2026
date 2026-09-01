@@ -33,8 +33,6 @@ metadata:
     <Embed title="" typeOfEmbed="github" url="" />
 
     <Embed title="" typeOfEmbed="iframe" url="https://readme.com/pricing" />
-
-
   </Tab>
 
   <Tab title="Umbenennen">
@@ -99,11 +97,11 @@ metadata:
 
 <Columns layout="fixed">
   <Column>
-    1. Seite
+    1 Seite
   </Column>
 
   <Column>
-    2. Seite
+    2 Seite
   </Column>
 </Columns>
 
@@ -120,5 +118,3 @@ metadata:
 <br />
 
 <Embed title="" typeOfEmbed="youtube" url="" />
-
-<br />
