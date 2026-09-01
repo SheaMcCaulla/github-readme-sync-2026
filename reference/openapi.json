@@ -2,7 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "Swagger Petstore - OpenAPI 3.0",
-    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSwagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!\nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.\nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\nSome useful links:\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+    "description": "Dit is een voorbeeld van een Pet Store Server gebaseerd op de OpenAPI 3.0-specificatie. Je kunt meer informatie vinden over\nSwagger op [https://swagger.io](https://swagger.io). In de derde iteratie van de pet store zijn we overgestapt op de design-first aanpak!\nJe kunt ons nu helpen de API te verbeteren, of dat nu is door wijzigingen aan te brengen in de definitie zelf of in de code.\nOp die manier kunnen we na verloop van tijd de API in het algemeen verbeteren en enkele van de nieuwe functies in OAS3 introduceren.\n\nEnkele handige links:\n- [De Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [De bron-API-definitie voor de Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
     "termsOfService": "https://swagger.io/terms/",
     "contact": {
       "email": "apiteam@swagger.io"
@@ -14,7 +14,7 @@
     "version": "1.0.27"
   },
   "externalDocs": {
-    "description": "Find out more about Swagger",
+    "description": "Meer informatie over Swagger",
     "url": "https://swagger.io"
   },
   "servers": [
@@ -25,23 +25,23 @@
   "tags": [
     {
       "name": "pet",
-      "description": "Everything about your Pets",
+      "description": "Alles over je huisdieren",
       "externalDocs": {
-        "description": "Find out more",
+        "description": "Meer informatie",
         "url": "https://swagger.io"
       }
     },
     {
       "name": "store",
-      "description": "Access to Petstore orders",
+      "description": "Toegang tot Petstore-bestellingen",
       "externalDocs": {
-        "description": "Find out more about our store",
+        "description": "Meer informatie over onze winkel",
         "url": "https://swagger.io"
       }
     },
     {
       "name": "user",
-      "description": "Operations about user"
+      "description": "Bewerkingen met betrekking tot gebruikers"
     }
   ],
   "paths": {
@@ -50,11 +50,11 @@
         "tags": [
           "pet"
         ],
-        "summary": "Update an existing pet.",
-        "description": "Update an existing pet by Id.",
+        "summary": "Een bestaand huisdier bijwerken.",
+        "description": "Een bestaand huisdier bijwerken op basis van ID.",
         "operationId": "updatePet",
         "requestBody": {
-          "description": "Update an existent pet in the store",
+          "description": "Een bestaand huisdier in de winkel bijwerken",
           "content": {
             "application/json": {
               "schema": {
@@ -76,7 +76,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -91,16 +91,16 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "Ongeldig ID opgegeven"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "Huisdier niet gevonden"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "Validatie-uitzondering"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         },
         "security": [
@@ -116,11 +116,11 @@
         "tags": [
           "pet"
         ],
-        "summary": "Add a new pet to the store.",
-        "description": "Add a new pet to the store.",
+        "summary": "Een nieuw huisdier toevoegen aan de winkel.",
+        "description": "Een nieuw huisdier toevoegen aan de winkel.",
         "operationId": "addPet",
         "requestBody": {
-          "description": "Create a new pet in the store",
+          "description": "Een nieuw huisdier aanmaken in de winkel",
           "content": {
             "application/json": {
               "schema": {
@@ -142,7 +142,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -157,13 +157,13 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "Ongeldige invoer"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "Validatie-uitzondering"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         },
         "security": [
@@ -181,14 +181,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Finds Pets by status.",
-        "description": "Multiple status values can be provided with comma separated strings.",
+        "summary": "Zoekt huisdieren op status.",
+        "description": "Meerdere statuswaarden kunnen worden opgegeven als door komma's gescheiden reeksen.",
         "operationId": "findPetsByStatus",
         "parameters": [
           {
             "name": "status",
             "in": "query",
-            "description": "Status values that need to be considered for filter",
+            "description": "Statuswaarden waarmee rekening moet worden gehouden voor de filter",
             "required": true,
             "explode": true,
             "schema": {
@@ -204,7 +204,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -225,10 +225,10 @@
             }
           },
           "400": {
-            "description": "Invalid status value"
+            "description": "Ongeldige statuswaarde"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         },
         "security": [
@@ -246,14 +246,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Finds Pets by tags.",
-        "description": "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.",
+        "summary": "Zoekt huisdieren op tags.",
+        "description": "Meerdere tags kunnen worden opgegeven als door komma's gescheiden reeksen. Gebruik tag1, tag2, tag3 om te testen.",
         "operationId": "findPetsByTags",
         "parameters": [
           {
             "name": "tags",
             "in": "query",
-            "description": "Tags to filter by",
+            "description": "Tags om op te filteren",
             "required": true,
             "explode": true,
             "schema": {
@@ -266,7 +266,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -287,10 +287,10 @@
             }
           },
           "400": {
-            "description": "Invalid tag value"
+            "description": "Ongeldige tagwaarde"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         },
         "security": [
@@ -308,14 +308,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Find pet by ID.",
-        "description": "Returns a single pet.",
+        "summary": "Huisdier zoeken op ID.",
+        "description": "Retourneert een enkel huisdier.",
         "operationId": "getPetById",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet to return",
+            "description": "ID van het te retourneren huisdier",
             "required": true,
             "schema": {
               "type": "integer",
@@ -325,7 +325,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -340,13 +340,13 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "Ongeldig ID opgegeven"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "Huisdier niet gevonden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         },
         "security": [
@@ -365,14 +365,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Updates a pet in the store with form data.",
-        "description": "Updates a pet resource based on the form data.",
+        "summary": "Werkt een huisdier in de winkel bij met formuliergegevens.",
+        "description": "Werkt een huisdierbron bij op basis van de formuliergegevens.",
         "operationId": "updatePetWithForm",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet that needs to be updated",
+            "description": "ID van het huisdier dat moet worden bijgewerkt",
             "required": true,
             "schema": {
               "type": "integer",
@@ -382,7 +382,7 @@
           {
             "name": "name",
             "in": "query",
-            "description": "Name of pet that needs to be updated",
+            "description": "Naam van het huisdier dat moet worden bijgewerkt",
             "schema": {
               "type": "string"
             }
@@ -390,7 +390,7 @@
           {
             "name": "status",
             "in": "query",
-            "description": "Status of pet that needs to be updated",
+            "description": "Status van het huisdier dat moet worden bijgewerkt",
             "schema": {
               "type": "string"
             }
@@ -398,7 +398,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -413,10 +413,10 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "Ongeldige invoer"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         },
         "security": [
@@ -432,8 +432,8 @@
         "tags": [
           "pet"
         ],
-        "summary": "Deletes a pet.",
-        "description": "Delete a pet.",
+        "summary": "Verwijdert een huisdier.",
+        "description": "Verwijder een huisdier.",
         "operationId": "deletePet",
         "parameters": [
           {
@@ -448,7 +448,7 @@
           {
             "name": "petId",
             "in": "path",
-            "description": "Pet id to delete",
+            "description": "ID van het te verwijderen huisdier",
             "required": true,
             "schema": {
               "type": "integer",
@@ -458,13 +458,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Pet deleted"
+            "description": "Huisdier verwijderd"
           },
           "400": {
-            "description": "Invalid pet value"
+            "description": "Ongeldige huisdierwaarde"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         },
         "security": [
@@ -482,14 +482,14 @@
         "tags": [
           "pet"
         ],
-        "summary": "Uploads an image.",
-        "description": "Upload image of the pet.",
+        "summary": "Uploadt een afbeelding.",
+        "description": "Upload afbeelding van het huisdier.",
         "operationId": "uploadFile",
         "parameters": [
           {
             "name": "petId",
             "in": "path",
-            "description": "ID of pet to update",
+            "description": "ID van het bij te werken huisdier",
             "required": true,
             "schema": {
               "type": "integer",
@@ -499,7 +499,7 @@
           {
             "name": "additionalMetadata",
             "in": "query",
-            "description": "Additional Metadata",
+            "description": "Aanvullende metadata",
             "required": false,
             "schema": {
               "type": "string"
@@ -518,7 +518,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -528,13 +528,13 @@
             }
           },
           "400": {
-            "description": "No file uploaded"
+            "description": "Geen bestand geüpload"
           },
           "404": {
-            "description": "Pet not found"
+            "description": "Huisdier niet gevonden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         },
         "security": [
@@ -552,12 +552,12 @@
         "tags": [
           "store"
         ],
-        "summary": "Returns pet inventories by status.",
-        "description": "Returns a map of status codes to quantities.",
+        "summary": "Retourneert voorraden van huisdieren per status.",
+        "description": "Retourneert een overzicht van statuscodes en aantallen.",
         "operationId": "getInventory",
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -571,7 +571,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         },
         "security": [
@@ -586,8 +586,8 @@
         "tags": [
           "store"
         ],
-        "summary": "Place an order for a pet.",
-        "description": "Place a new order in the store.",
+        "summary": "Plaats een bestelling voor een huisdier.",
+        "description": "Plaats een nieuwe bestelling in de winkel.",
         "operationId": "placeOrder",
         "requestBody": {
           "content": {
@@ -610,7 +610,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -620,13 +620,13 @@
             }
           },
           "400": {
-            "description": "Invalid input"
+            "description": "Ongeldige invoer"
           },
           "422": {
-            "description": "Validation exception"
+            "description": "Validatie-uitzondering"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         }
       }
@@ -636,14 +636,14 @@
         "tags": [
           "store"
         ],
-        "summary": "Find purchase order by ID.",
-        "description": "For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions.",
+        "summary": "Vind bestelling op ID.",
+        "description": "Probeer voor een geldig antwoord gehele getallen als ID met een waarde <= 5 of > 10. Andere waarden genereren uitzonderingen.",
         "operationId": "getOrderById",
         "parameters": [
           {
             "name": "orderId",
             "in": "path",
-            "description": "ID of order that needs to be fetched",
+            "description": "ID van de op te halen bestelling",
             "required": true,
             "schema": {
               "type": "integer",
@@ -653,7 +653,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -668,13 +668,13 @@
             }
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "Ongeldige ID opgegeven"
           },
           "404": {
-            "description": "Order not found"
+            "description": "Bestelling niet gevonden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         }
       },
@@ -682,14 +682,14 @@
         "tags": [
           "store"
         ],
-        "summary": "Delete purchase order by identifier.",
-        "description": "For valid response try integer IDs with value < 1000. Anything above 1000 or non-integers will generate API errors.",
+        "summary": "Verwijder bestelling op ID.",
+        "description": "Probeer voor een geldig antwoord gehele getallen als ID met een waarde < 1000. Alles boven 1000 of niet-gehele getallen genereren API-fouten.",
         "operationId": "deleteOrder",
         "parameters": [
           {
             "name": "orderId",
             "in": "path",
-            "description": "ID of the order that needs to be deleted",
+            "description": "ID van de te verwijderen bestelling",
             "required": true,
             "schema": {
               "type": "integer",
@@ -699,16 +699,16 @@
         ],
         "responses": {
           "200": {
-            "description": "order deleted"
+            "description": "bestelling verwijderd"
           },
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "Ongeldige ID opgegeven"
           },
           "404": {
-            "description": "Order not found"
+            "description": "Bestelling niet gevonden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         }
       }
@@ -718,11 +718,11 @@
         "tags": [
           "user"
         ],
-        "summary": "Create user.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "Gebruiker aanmaken.",
+        "description": "Dit kan alleen worden gedaan door de ingelogde gebruiker.",
         "operationId": "createUser",
         "requestBody": {
-          "description": "Created user object",
+          "description": "Gebruikersobject aangemaakt",
           "content": {
             "application/json": {
               "schema": {
@@ -743,7 +743,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -758,7 +758,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         }
       }
@@ -768,8 +768,8 @@
         "tags": [
           "user"
         ],
-        "summary": "Creates list of users with given input array.",
-        "description": "Creates list of users with given input array.",
+        "summary": "Maakt een lijst met gebruikers aan met de opgegeven invoerarray.",
+        "description": "Maakt een lijst met gebruikers aan met de opgegeven invoerarray.",
         "operationId": "createUsersWithListInput",
         "requestBody": {
           "content": {
@@ -785,7 +785,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -800,7 +800,7 @@
             }
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         }
       }
@@ -810,14 +810,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Logs user into the system.",
-        "description": "Log into the system.",
+        "summary": "Logt de gebruiker in op het systeem.",
+        "description": "Log in op het systeem.",
         "operationId": "loginUser",
         "parameters": [
           {
             "name": "username",
             "in": "query",
-            "description": "The user name for login",
+            "description": "De gebruikersnaam om in te loggen",
             "required": false,
             "schema": {
               "type": "string"
@@ -826,7 +826,7 @@
           {
             "name": "password",
             "in": "query",
-            "description": "The password for login in clear text",
+            "description": "Het wachtwoord om in te loggen in duidelijke tekst",
             "required": false,
             "schema": {
               "type": "string"
@@ -835,17 +835,17 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "headers": {
               "X-Rate-Limit": {
-                "description": "calls per hour allowed by the user",
+                "description": "toegestane aanroepen per uur door de gebruiker",
                 "schema": {
                   "type": "integer",
                   "format": "int32"
                 }
               },
               "X-Expires-After": {
-                "description": "date in UTC when token expires",
+                "description": "datum in UTC waarop het token verloopt",
                 "schema": {
                   "type": "string",
                   "format": "date-time"
@@ -866,10 +866,10 @@
             }
           },
           "400": {
-            "description": "Invalid username/password supplied"
+            "description": "Ongeldige gebruikersnaam/wachtwoord opgegeven"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         }
       }
@@ -879,16 +879,16 @@
         "tags": [
           "user"
         ],
-        "summary": "Logs out current logged in user session.",
-        "description": "Log user out of the system.",
+        "summary": "Logt de huidige ingelogde gebruikerssessie uit.",
+        "description": "Gebruiker uitloggen uit het systeem.",
         "operationId": "logoutUser",
         "parameters": [],
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "succesvolle bewerking"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         }
       }
@@ -898,14 +898,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Get user by user name.",
-        "description": "Get user detail based on username.",
+        "summary": "Gebruiker ophalen op gebruikersnaam.",
+        "description": "Gebruikersdetails ophalen op basis van gebruikersnaam.",
         "operationId": "getUserByName",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "The name that needs to be fetched. Use user1 for testing",
+            "description": "De naam die moet worden opgehaald. Gebruik user1 om te testen",
             "required": true,
             "schema": {
               "type": "string"
@@ -914,7 +914,7 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "succesvolle bewerking",
             "content": {
               "application/json": {
                 "schema": {
@@ -929,13 +929,13 @@
             }
           },
           "400": {
-            "description": "Invalid username supplied"
+            "description": "Ongeldige gebruikersnaam opgegeven"
           },
           "404": {
-            "description": "User not found"
+            "description": "Gebruiker niet gevonden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         }
       },
@@ -943,14 +943,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Update user resource.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "Gebruikersbron bijwerken.",
+        "description": "Dit kan alleen worden gedaan door de ingelogde gebruiker.",
         "operationId": "updateUser",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "name that need to be deleted",
+            "description": "naam die moet worden verwijderd",
             "required": true,
             "schema": {
               "type": "string"
@@ -958,7 +958,7 @@
           }
         ],
         "requestBody": {
-          "description": "Update an existent user in the store",
+          "description": "Een bestaande gebruiker in de winkel bijwerken",
           "content": {
             "application/json": {
               "schema": {
@@ -979,16 +979,16 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "succesvolle bewerking"
           },
           "400": {
-            "description": "bad request"
+            "description": "ongeldig verzoek"
           },
           "404": {
-            "description": "user not found"
+            "description": "gebruiker niet gevonden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         }
       },
@@ -996,14 +996,14 @@
         "tags": [
           "user"
         ],
-        "summary": "Delete user resource.",
-        "description": "This can only be done by the logged in user.",
+        "summary": "Gebruikersbron verwijderen.",
+        "description": "Dit kan alleen worden gedaan door de ingelogde gebruiker.",
         "operationId": "deleteUser",
         "parameters": [
           {
             "name": "username",
             "in": "path",
-            "description": "The name that needs to be deleted",
+            "description": "De naam die moet worden verwijderd",
             "required": true,
             "schema": {
               "type": "string"
@@ -1012,16 +1012,16 @@
         ],
         "responses": {
           "200": {
-            "description": "User deleted"
+            "description": "Gebruiker verwijderd"
           },
           "400": {
-            "description": "Invalid username supplied"
+            "description": "Ongeldige gebruikersnaam opgegeven"
           },
           "404": {
-            "description": "User not found"
+            "description": "Gebruiker niet gevonden"
           },
           "default": {
-            "description": "Unexpected error"
+            "description": "Onverwachte fout"
           }
         }
       }
@@ -1053,7 +1053,7 @@
           },
           "status": {
             "type": "string",
-            "description": "Order Status",
+            "description": "Bestelstatus",
             "example": "approved",
             "enum": [
               "placed",
@@ -1120,7 +1120,7 @@
           },
           "userStatus": {
             "type": "integer",
-            "description": "User Status",
+            "description": "Gebruikersstatus",
             "format": "int32",
             "example": 1
           }
@@ -1186,7 +1186,7 @@
           },
           "status": {
             "type": "string",
-            "description": "pet status in the store",
+            "description": "status van huisdier in de winkel",
             "enum": [
               "available",
               "pending",
@@ -1266,5 +1266,8 @@
         "in": "header"
       }
     }
+  },
+  "x-readme-ai-translation": {
+    "sourceHash": "9d6e66f97c6d9213"
   }
 }
