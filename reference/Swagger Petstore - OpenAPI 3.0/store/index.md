@@ -1,4 +1,5 @@
 ---
-title: duka
-excerpt: Ufikiaji wa maagizo ya Petstore
+title: store
+excerpt: Access to Petstore orders
+hidden: false
 ---
