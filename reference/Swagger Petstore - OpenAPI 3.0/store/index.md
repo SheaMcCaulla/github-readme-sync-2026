@@ -1,4 +1,5 @@
 ---
-title: ストア
-excerpt: Petstoreの注文へのアクセス
+title: store
+excerpt: Access to Petstore orders
+hidden: false
 ---

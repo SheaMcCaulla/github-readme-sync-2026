@@ -1,4 +1,5 @@
 ---
-title: ユーザー
-excerpt: ユーザーに関する操作
+title: user
+excerpt: Operations about user
+hidden: false
 ---

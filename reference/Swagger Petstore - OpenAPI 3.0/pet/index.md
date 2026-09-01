@@ -1,4 +1,5 @@
 ---
-title: ペット
-excerpt: ペットに関するすべて
+title: pet
+excerpt: Everything about your Pets
+hidden: false
 ---
