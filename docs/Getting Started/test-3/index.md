@@ -1,9 +1,7 @@
 ---
 title: Acme を始める
 ---
-<Accordion title="よくあるエラー" icon="fa-info-circle">
-
-</Accordion>
+<Accordion title="よくあるエラー" icon="fa-info-circle" />
 
 <Cards>
   <Card title="5分セットアップ" icon="fa-rocket">
@@ -14,9 +12,7 @@ title: Acme を始める
     チームにAPIキーをリクエストする
   </Card>
 
-  <Card title="カード3" icon="fa-comments">
-
-  </Card>
+  <Card title="カード3" icon="fa-comments" />
 </Cards>
 
 ```mermaid
@@ -26,11 +22,4 @@ flowchart LR
   B -->|Invalid| D[401 Error]
 ```
 
-<Banner
-  isInline={true}
-  message="This banner is displayed inline. Set isInline to false to move it seamlessly into your page's header!"
-  color="#118cfd"
-  textColor="#ffffff"
-  fontSize="14px"
-  fontWeight="bold"
- />
+<Banner isInline={true} message="This banner is displayed inline. Set isInline to false to move it seamlessly into your page's header!" color="#118cfd" textColor="#ffffff" fontSize="14px" fontWeight="bold" />
