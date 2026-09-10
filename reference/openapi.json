@@ -50,8 +50,8 @@
         "tags": [
           "pet"
         ],
-        "summary": "更新现有的宠物。",
-        "description": "通过 ID 更新现有的宠物。",
+        "summary": "更新现有宠物。",
+        "description": "通过 ID 更新现有宠物。",
         "operationId": "updatePet",
         "requestBody": {
           "description": "更新商店中现有的宠物",
