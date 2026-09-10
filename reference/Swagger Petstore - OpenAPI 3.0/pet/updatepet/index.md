@@ -1,4 +1,4 @@
 ---
 title: Ein bestehendes Haustier aktualisieren.
-excerpt: Aktualisiere ein bestehendes Haustier anhand der ID.
+excerpt: Ein bestehendes Haustier anhand der ID aktualisieren.
 ---
