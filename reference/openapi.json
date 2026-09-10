@@ -50,8 +50,8 @@
         "tags": [
           "pet"
         ],
-        "summary": "Een bestaand huisdier bijwerken.",
-        "description": "Een bestaand huisdier bijwerken op basis van ID.",
+        "summary": "Werk een bestaand huisdier bij.",
+        "description": "Werk een bestaand huisdier bij via ID.",
         "operationId": "updatePet",
         "requestBody": {
           "description": "Een bestaand huisdier in de winkel bijwerken",
