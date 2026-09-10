@@ -2,7 +2,6 @@
 - updatepetwithform
 - uploadfile
 - deletepet
-- addpet
 - findpetsbystatus
 - findpetsbytags
 - getpetbyid
