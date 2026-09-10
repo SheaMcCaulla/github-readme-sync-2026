@@ -1,9 +1,7 @@
 ---
 title: Acme 시작하기
 ---
-<Accordion title="일반적인 오류" icon="fa-info-circle">
-
-</Accordion>
+<Accordion title="일반적인 오류" icon="fa-info-circle" />
 
 <Cards>
   <Card title="5분 설정" icon="fa-rocket">
@@ -14,9 +12,7 @@ title: Acme 시작하기
     저희 팀에 API 키를 요청하세요
   </Card>
 
-  <Card title="카드 3" icon="fa-comments">
-
-  </Card>
+  <Card title="카드 3" icon="fa-comments" />
 </Cards>
 
 ```mermaid
@@ -26,11 +22,4 @@ flowchart LR
   B -->|Invalid| D[401 Error]
 ```
 
-<Banner
-  isInline={true}
-  message="This banner is displayed inline. Set isInline to false to move it seamlessly into your page's header!"
-  color="#118cfd"
-  textColor="#ffffff"
-  fontSize="14px"
-  fontWeight="bold"
- />
+<Banner isInline={true} message="This banner is displayed inline. Set isInline to false to move it seamlessly into your page's header!" color="#118cfd" textColor="#ffffff" fontSize="14px" fontWeight="bold" />
