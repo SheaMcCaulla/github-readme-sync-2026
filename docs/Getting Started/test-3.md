@@ -1,9 +1,7 @@
 ---
-title: Primeiros passos com o Acme
+title: Primeiros passos com a Acme
 ---
-<Accordion title="Erros Comuns" icon="fa-info-circle">
-
-</Accordion>
+<Accordion title="Erros Comuns" icon="fa-info-circle" />
 
 <Cards>
   <Card title="Configuração em 5 Minutos" icon="fa-rocket">
@@ -14,9 +12,7 @@ title: Primeiros passos com o Acme
     Solicite sua chave de API à nossa equipe
   </Card>
 
-  <Card title="Card Três" icon="fa-comments">
-
-  </Card>
+  <Card title="Cartão Três" icon="fa-comments" />
 </Cards>
 
 ```mermaid
@@ -26,11 +22,4 @@ flowchart LR
   B -->|Invalid| D[401 Error]
 ```
 
-<Banner
-  isInline={true}
-  message="This banner is displayed inline. Set isInline to false to move it seamlessly into your page's header!"
-  color="#118cfd"
-  textColor="#ffffff"
-  fontSize="14px"
-  fontWeight="bold"
- />
+<Banner isInline={true} message="This banner is displayed inline. Set isInline to false to move it seamlessly into your page's header!" color="#118cfd" textColor="#ffffff" fontSize="14px" fontWeight="bold" />
