@@ -50,8 +50,8 @@
         "tags": [
           "pet"
         ],
-        "summary": "Mettre à jour un animal existant.",
-        "description": "Mettre à jour un animal existant par ID.",
+        "summary": "Mettre à jour un animal de compagnie existant.",
+        "description": "Mettre à jour un animal de compagnie existant par son identifiant.",
         "operationId": "updatePet",
         "requestBody": {
           "description": "Mettre à jour un animal existant dans le magasin",
