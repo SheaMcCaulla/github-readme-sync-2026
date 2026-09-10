@@ -1,22 +1,18 @@
 ---
 title: Kuanza na Acme
 ---
-<Accordion title="Hitilafu za Kawaida" icon="fa-info-circle">
-
-</Accordion>
+<Accordion title="Hitilafu za Kawaida" icon="fa-info-circle" />
 
 <Cards>
   <Card title="Usanidi wa Dakika 5" icon="fa-rocket">
-    Kutoka ufunguo wa API hadi ombi la kwanza
+    Kutoka kwa ufunguo wa API hadi ombi la kwanza
   </Card>
 
-  <Card title="Kuanza Haraka kwa API" icon="fa-code">
+  <Card title="Anza Haraka na API" icon="fa-code">
     Omba ufunguo wako wa API kutoka kwa timu yetu
   </Card>
 
-  <Card title="Kadi ya Tatu" icon="fa-comments">
-
-  </Card>
+  <Card title="Kadi ya Tatu" icon="fa-comments" />
 </Cards>
 
 ```mermaid
@@ -26,11 +22,4 @@ flowchart LR
   B -->|Invalid| D[401 Error]
 ```
 
-<Banner
-  isInline={true}
-  message="This banner is displayed inline. Set isInline to false to move it seamlessly into your page's header!"
-  color="#118cfd"
-  textColor="#ffffff"
-  fontSize="14px"
-  fontWeight="bold"
- />
+<Banner isInline={true} message="This banner is displayed inline. Set isInline to false to move it seamlessly into your page's header!" color="#118cfd" textColor="#ffffff" fontSize="14px" fontWeight="bold" />
