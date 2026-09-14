@@ -1,4 +1,5 @@
 - addpet
 - findpetsbytags
 - findpetsbystatus
+- getpetbyid
 - test
